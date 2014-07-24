@@ -1,2 +1,2 @@
-\contentsline {part}{I\hspace {1em}A Part Heading}{1}{part.1}
-\contentsline {chapter}{\numberline {1}The Story Begins}{5}{chapter.1}
+\contentsline {chapter}{\numberline {1}Early Childhood: ``The Story Begins''}{3}{chapter.1}
+\contentsline {chapter}{\numberline {2}Memory begins to crystallize}{9}{chapter.2}

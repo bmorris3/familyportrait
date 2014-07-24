@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  23 JUL 2014 18:58
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  24 JUL 2014 08:41
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -172,25 +172,39 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip43
 )
+(/usr/local/texlive/2010/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
+\symwasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count96
+\float@exts=\toks16
+\float@box=\box26
+\@float@everytoks=\toks17
+\@floatcapt=\box27
+)
 (./familyportrait.aux)
 \openout1 = `familyportrait.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-\AtBeginShipoutBox=\box26
-Package hyperref Info: Link coloring OFF on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+\AtBeginShipoutBox=\box28
+Package hyperref Info: Link coloring OFF on input line 17.
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -201,84 +215,129 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 (/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2009/12/18 v1.3 Cleanup title references (HO)
 )
-\c@section@level=\count96
+\c@section@level=\count97
 )
-LaTeX Info: Redefining \ref on input line 11.
-LaTeX Info: Redefining \pageref on input line 11.
-LaTeX Info: Redefining \nameref on input line 11.
+LaTeX Info: Redefining \ref on input line 17.
+LaTeX Info: Redefining \pageref on input line 17.
+LaTeX Info: Redefining \nameref on input line 17.
 
 (./familyportrait.out) (./familyportrait.out)
 \@outlinefile=\write3
 \openout3 = `familyportrait.out'.
 
+ [1{/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+] [2
+
+]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 14.
+(Font)              <14.4> on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 14.
- [1
+(Font)              <7> on input line 25.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 25.
 
+(/usr/local/texlive/2010/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+)pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.25 \tableofcontents
+                                             % Print table of contents [1]pdfTe
+X warning (ext4): destination with the same identifier (name{page.ii}) has been
+ already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.25 \tableofcontents
+                                             % Print table of contents [2
 
-
-{/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
-
-] (./familyportrait.toc)
+]
+(./familyportrait.toc)
 \tf@toc=\write4
 \openout4 = `familyportrait.toc'.
 
- [3]
-[4
+ [3] [4
 
 ] [1
 
-] [2] [3
-
-] [4
+] [2
 
 ]
 Chapter 1.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5]
+ [3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6]
+ [4]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 68.
+(Font)              <12> on input line 79.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 68.
+(Font)              <8> on input line 79.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 68.
+(Font)              <6> on input line 79.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 68.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
+(Font)              <5> on input line 79.
 
-[7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
+Underfull \vbox (badness 2057) has occurred while \output is active []
+
+ [5]
+[6] [7] [8
+
+pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.3})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.117 \chapter
+              {Memory begins to crystallize}]
+Chapter 2.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
+
+[11]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
  (./familyportrait.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
 Package rerunfilecheck Info: File `familyportrait.out' has not changed.
-(rerunfilecheck)             Checksum: 95804032C7858E8D3B2F67FA426AEEBB;106.
+(rerunfilecheck)             Checksum: AB7DA7734D9103ED718821D4C07ECAD2;135.
  ) 
 Here is how much of TeX's memory you used:
- 3962 strings out of 493747
- 60801 string characters out of 3143546
- 130619 words of memory out of 3000000
- 7208 multiletter control sequences out of 15000+200000
- 9813 words of font info for 34 fonts, out of 3000000 for 9000
+ 4217 strings out of 493747
+ 63595 string characters out of 3143546
+ 134064 words of memory out of 3000000
+ 7438 multiletter control sequences out of 15000+200000
+ 11948 words of font info for 43 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 31i,8n,22p,786b,327s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
-sr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
-local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
-al/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/loca
-l/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on familyportrait.pdf (11 pages, 89870 bytes).
+ 31i,12n,22p,994b,327s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
+st, replaced by a fixed one
+
+</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+/usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
+/usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/l
+ocal/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
+l/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
+exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/te
+xlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/tex
+live/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
+ive/2010/texmf-dist/fonts/type1/public/wasy/wasy10.pfb>
+Output written on familyportrait.pdf (17 pages, 141777 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
+ 151 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
  17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
