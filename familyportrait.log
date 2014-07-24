@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  24 JUL 2014 08:41
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  24 JUL 2014 09:37
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -315,7 +315,7 @@ Package rerunfilecheck Info: File `familyportrait.out' has not changed.
 Here is how much of TeX's memory you used:
  4217 strings out of 493747
  63595 string characters out of 3143546
- 134064 words of memory out of 3000000
+ 134068 words of memory out of 3000000
  7438 multiletter control sequences out of 15000+200000
  11948 words of font info for 43 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
@@ -334,7 +334,7 @@ exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/te
 xlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/tex
 live/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
 ive/2010/texmf-dist/fonts/type1/public/wasy/wasy10.pfb>
-Output written on familyportrait.pdf (17 pages, 141777 bytes).
+Output written on familyportrait.pdf (17 pages, 141865 bytes).
 PDF statistics:
  151 PDF objects out of 1000 (max. 8388607)
  119 compressed objects within 2 object streams
