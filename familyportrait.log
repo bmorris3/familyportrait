@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  27 JUL 2014 22:37
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  29 JUL 2014 21:51
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -395,23 +395,41 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [44]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 432.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[45]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 432.
+ [45]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46]
+Overfull \hbox (8.76819pt too wide) in paragraph at lines 430--431
+[]\OT1/cmr/m/n/12 Fortunately, I met a fel-low sales-man, Char-lie Schwartz, wh
+o lived in Philadelpia
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [48]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 465.
+
+[49]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 465.
  (./familyportrait.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 432.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 465.
 Package rerunfilecheck Info: File `familyportrait.out' has not changed.
 (rerunfilecheck)             Checksum: 0D77A92AEA78D4E1ECAE7FD27FB6CF6F;314.
  ) 
 Here is how much of TeX's memory you used:
- 4259 strings out of 493747
- 63913 string characters out of 3143546
+ 4263 strings out of 493747
+ 63941 string characters out of 3143546
  134068 words of memory out of 3000000
  7442 multiletter control sequences out of 15000+200000
  11948 words of font info for 43 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 31i,8n,22p,1382b,327s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,8n,22p,1480b,327s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
@@ -423,10 +441,10 @@ cal/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
 texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
 exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/te
 xlive/2010/texmf-dist/fonts/type1/public/wasy/wasy10.pfb>
-Output written on familyportrait.pdf (51 pages, 229703 bytes).
+Output written on familyportrait.pdf (55 pages, 241349 bytes).
 PDF statistics:
- 346 PDF objects out of 1000 (max. 8388607)
- 279 compressed objects within 3 object streams
- 62 named destinations out of 1000 (max. 500000)
+ 367 PDF objects out of 1000 (max. 8388607)
+ 296 compressed objects within 3 object streams
+ 66 named destinations out of 1000 (max. 500000)
  49 words of extra memory for PDF output out of 10000 (max. 10000000)
 
