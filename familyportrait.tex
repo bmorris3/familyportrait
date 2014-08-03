@@ -1,6 +1,5 @@
 \documentclass[12pt]{book}              % Book class in 11 points
 \parindent0pt  \parskip10pt             % make block paragraphs
-\usepackage{hyperref}
 \usepackage{wasysym} % Needed for cents symbol
 \usepackage{float}
 %\usepackage{footnote}
@@ -8,7 +7,15 @@
 %\makesavenoteenv{table}
 %\raggedright                            % do not right justify
 
-%\newcommand{\supth}{$^{\mathrm{th}}$}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=blue           % color of external links
+}
+
 
 \title{\textsc{Family Portrait}\\ The Memoirs of James Alfred Morris}    % Supply information
 \author{J. A. Morris}              %   for the title page.
