@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  3 AUG 2014 22:33
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  3 AUG 2014 23:08
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -48,15 +48,51 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks15
 \@floatcapt=\box27
 )
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/02/14 v0.04n Graphics/color for pdfTeX
+\Gread@gobject=\count89
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2010/01/09 v3.1m Customizing captions (AR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2010/01/14 v3.1m caption3 kernel (AR)
+\captionmargin=\dimen105
+\captionmargin@=\dimen106
+\captionwidth=\dimen107
+\caption@indent=\dimen108
+\caption@parindent=\dimen109
+\caption@hangindent=\dimen110
+)
+\c@ContinuedFloat=\count90
+Package caption Info: float package is loaded.
+)
 (/usr/local/texlive/2010/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2010/06/18 v6.81g Hypertext links for LaTeX
 
 (/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2010/04/26 v1.7 LaTeX kernel commands for general use (HO)
-)
-(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks16
 )
 (/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2010/03/01 v1.9 Key value parser (HO)
@@ -107,9 +143,9 @@ Package: xcolor-patch 2009/12/12 xcolor patch
 (/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/letltxmacro.sty
 Package: letltxmacro 2008/06/24 v1.3 Let assignment for LaTeX macros (HO)
 )
-\@linkdim=\dimen103
-\Hy@linkcounter=\count89
-\Hy@pagecounter=\count90
+\@linkdim=\dimen111
+\Hy@linkcounter=\count91
+\Hy@pagecounter=\count92
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2010/06/18 v6.81g Hyperref: PDFDocEncoding definition (HO)
@@ -143,9 +179,9 @@ Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
 (/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/bigintcalc.sty
 Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
 ))
-\Fld@menulength=\count91
-\Field@Width=\dimen104
-\Fld@charsize=\dimen105
+\Fld@menulength=\count93
+\Field@Width=\dimen112
+\Fld@charsize=\dimen113
 \Field@toks=\toks17
 Package hyperref Info: Hyper figures OFF on input line 5137.
 Package hyperref Info: Link nesting OFF on input line 5142.
@@ -160,9 +196,9 @@ LaTeX Info: Redefining \pageref on input line 5211.
 (/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2010/03/25 v1.12 At begin shipout hook (HO)
 )
-\Hy@abspage=\count92
-\c@Item=\count93
-\c@Hfootnote=\count94
+\Hy@abspage=\count94
+\c@Item=\count95
+\c@Hfootnote=\count96
 )
 * hyperref using default driver hpdftex *
 (/usr/local/texlive/2010/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -172,8 +208,8 @@ File: hpdftex.def 2010/06/18 v6.81g Hyperref driver for pdfTeX
 Package: atveryend 2010/03/24 v1.5 Hooks at very end of document (HO)
 Package atveryend Info: \enddocument detected (standard).
 )
-\Fld@listcount=\count95
-\c@bookmark@seq@number=\count96
+\Fld@listcount=\count97
+\c@bookmark@seq@number=\count98
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2010/03/16 v1.6 Rerun checks for auxiliary files (HO)
@@ -186,26 +222,57 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip43
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 17.
+Package hyperref Info: Option `colorlinks' set `true' on input line 20.
 
 (./familyportrait.aux)
 \openout1 = `familyportrait.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-\AtBeginShipoutBox=\box28
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+
+(/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count99
+\scratchdimen=\dimen114
+\scratchbox=\box28
+\nofMPsegments=\count100
+\nofMParguments=\count101
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count102
+\MPscratchDim=\dimen115
+\MPnumerator=\count103
+\everyMPtoPDFconversion=\toks19
+) (/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2007/09/30 v1.0 Managing graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 436.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box29
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
@@ -214,26 +281,10 @@ Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
+)
+Package hyperref Info: Link coloring ON on input line 28.
 
-(/usr/local/texlive/2010/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2010/02/14 v0.04n Graphics/color for pdfTeX
-\Gread@gobject=\count97
-
-(/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count98
-\scratchdimen=\dimen106
-\scratchbox=\box29
-\nofMPsegments=\count99
-\nofMParguments=\count100
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count101
-\MPscratchDim=\dimen107
-\MPnumerator=\count102
-\everyMPtoPDFconversion=\toks19
-)))
-Package hyperref Info: Link coloring ON on input line 25.
- (/usr/local/texlive/2010/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2010/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/refcount.sty
@@ -242,11 +293,11 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 (/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2009/12/18 v1.3 Cleanup title references (HO)
 )
-\c@section@level=\count103
+\c@section@level=\count104
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 28.
+LaTeX Info: Redefining \pageref on input line 28.
+LaTeX Info: Redefining \nameref on input line 28.
 
 (./familyportrait.out) (./familyportrait.out)
 \@outlinefile=\write3
@@ -259,10 +310,10 @@ LaTeX Info: Redefining \nameref on input line 25.
 
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 38.
+(Font)              <14.4> on input line 41.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 38.
-LaTeX Font Info:    Try loading font information for U+wasy on input line 38.
+(Font)              <7> on input line 41.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 41.
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
@@ -270,13 +321,13 @@ File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.38 \tableofcontents
+l.41 \tableofcontents
                                              % Print table of contents [1]pdfTe
 X warning (ext4): destination with the same identifier (name{page.ii}) has been
  already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.38 \tableofcontents
+l.41 \tableofcontents
                                              % Print table of contents [2
 
 ]
@@ -300,13 +351,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 90.
+(Font)              <12> on input line 93.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 90.
+(Font)              <8> on input line 93.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 90.
+(Font)              <6> on input line 93.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 92.
+(Font)              <5> on input line 95.
 
 Underfull \vbox (badness 2057) has occurred while \output is active []
 
@@ -428,7 +479,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [46]
-Overfull \hbox (8.76819pt too wide) in paragraph at lines 437--438
+Overfull \hbox (8.76819pt too wide) in paragraph at lines 440--441
 []\OT1/cmr/m/n/12 Fortunately, I met a fel-low sales-man, Char-lie Schwartz, wh
 o lived in Philadelpia
  []
@@ -469,26 +520,37 @@ Underfull \vbox (badness 2057) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [58]
+<images/The_Brooklyn_Daily_Eagle_Wed__Jun_17__1931_.jpg, id=364, 4981.61125pt x
+ 2456.17625pt>
+File: images/The_Brooklyn_Daily_Eagle_Wed__Jun_17__1931_.jpg Graphic file (type
+ jpg)
+ <use images/The_Brooklyn_Daily_Eagle_Wed__Jun_17__1931_.jpg>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [59]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 531.
+ [59 <./images/The_Brooklyn_Daily_Eagle_Wed__Jun_17__1931_.jpg>]
+<images/The_Brooklyn_Daily_Eagle_Mon__Jul_3__1933_.jpg, id=374, 5041.83624pt x 
+5515.60625pt>
+File: images/The_Brooklyn_Daily_Eagle_Mon__Jul_3__1933_.jpg Graphic file (type 
+jpg)
+ <use images/The_Brooklyn_Daily_Eagle_Mon__Jul_3__1933_.jpg>
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 557.
 
-[60]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 531.
- (./familyportrait.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 531.
+[60 <./images/The_Brooklyn_Daily_Eagle_Mon__Jul_3__1933_.jpg>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 557.
+
+(./familyportrait.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 557.
 Package rerunfilecheck Info: File `familyportrait.out' has not changed.
 (rerunfilecheck)             Checksum: 874C0F95013FCC91BCD0BC26563950CA;376.
  ) 
 Here is how much of TeX's memory you used:
- 4804 strings out of 493747
- 71064 string characters out of 3143546
- 143985 words of memory out of 3000000
- 7957 multiletter control sequences out of 15000+200000
- 11948 words of font info for 43 fonts, out of 3000000 for 9000
+ 5980 strings out of 493747
+ 92170 string characters out of 3143546
+ 169172 words of memory out of 3000000
+ 9098 multiletter control sequences out of 15000+200000
+ 12117 words of font info for 44 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 31i,9n,22p,1480b,328s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,9n,38p,1480b,481s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
@@ -499,11 +561,12 @@ cal/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
 /texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/
 texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
 exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/te
-xlive/2010/texmf-dist/fonts/type1/public/wasy/wasy10.pfb>
-Output written on familyportrait.pdf (66 pages, 268676 bytes).
+xlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/tex
+live/2010/texmf-dist/fonts/type1/public/wasy/wasy10.pfb>
+Output written on familyportrait.pdf (66 pages, 1880024 bytes).
 PDF statistics:
- 430 PDF objects out of 1000 (max. 8388607)
- 347 compressed objects within 4 object streams
- 79 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 445 PDF objects out of 1000 (max. 8388607)
+ 357 compressed objects within 4 object streams
+ 82 named destinations out of 1000 (max. 500000)
+ 67 words of extra memory for PDF output out of 10000 (max. 10000000)
 
