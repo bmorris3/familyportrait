@@ -1,5 +1,4 @@
-\documentclass[12pt]{book}              % Book class in 11 points
-\parindent0pt  \parskip10pt             % make block paragraphs
+\documentclass[12pt]{memoir}              % Book class in 11 points
 \usepackage{wasysym} % Needed for cents symbol
 \usepackage{float}
 \usepackage{graphicx}
@@ -9,6 +8,10 @@
 %\makesavenoteenv{tabular}
 %\makesavenoteenv{table}
 %\raggedright                            % do not right justify
+
+\interfootnotelinepenalty=10000
+\parindent0pt  
+\parskip10pt             % make block paragraphs
 
 \usepackage{hyperref}
 \hypersetup{
@@ -20,24 +23,24 @@
 }
 
 
-\title{\textsc{Family Portrait}\\ The Memoirs of James Alfred Morris}    % Supply information
-\author{J. A. Morris}              %   for the title page.
-\date{New York, 1962}                           %   Use current date. 
-
+\title{\textsc{\Huge Family Portrait}\\ The Memoirs of James Alfred Morris}    % Supply information
+\author{James Alfred Morris \andnext and Brett Michael Morris}              %   for the title page.
+\date{New York, 1962-1963}                           %   Use current date. 
 % Note that book class by default is formatted to be printed back-to-back.
 \begin{document}                        % End of preamble, start of text.
-\frontmatter                            % only in book class (roman page #s)
+\frontmatter
 
 \section*{Note from the editor}
-This is an lightly edited reproduction of the original typed manuscripts of the memoir of J.~A.~Morris, with hand-written annotations and corrections. It was transcribed by Brett M.~Morris, great-grandson of the author, in 2014. 
+This is an lightly edited reproduction of the original typed manuscripts of the memoir of J.~A.~Morris. It was transcribed by Brett M.~Morris, great-grandson of the author, in 2014. 
 
-The annotations in the margins have faded in places and are illegible. When large bits of text are missing that cause breaks in the narrative, they will be marked with the word: [Illegible]. %Missing pages will be marked similarly.
+Annotations in the margins of the manuscripts faded in places with time and became illegible. When large bits of text are missing that cause breaks in the narrative, they will be marked with the word: [Illegible].
 
-In an attempt to remain true to the manuscripts, any descriptions or definitions added by the editor to clarify some of the more dated language are written in footnotes. 
+In an attempt to remain true to the manuscripts, any editorial descriptions or definitions added by the transcriber to clarify some of the more dated language are written in footnotes. 
 
 
 
 \maketitle                              % Print title page.
+\pagebreak
 \tableofcontents                        % Print table of contents
 \mainmatter                             % only in book class (arabic page #s)
 %\part{A Part Heading}                   % Print a "part" heading
@@ -92,7 +95,7 @@ Grandma Morris, Uncle Dave and Aunt Addie have long since passed away. More rece
 
 As mentioned earlier, I have no recollection of my first home in Brooklyn. We moved to Morris Park (\href{http://en.wikipedia.org/wiki/Richmond_Hill,_Queens}{Richmond Hill}, south of the railroad) when I was about four years old. Pop was a machinist in the Long Island Railroad shops in that village. The new home was a far-from-pretentious flat in a three-story six-family house on the northwest corner of Briggs Ave (now 117\textsuperscript{th} Street) and Chichester Avenue (now 95\textsuperscript{th} Avenue). There was only one house directly opposite on the avenue. In the rear of our flat was a fenced-in yard and beyond that open fields almost to Atlantic Avenue. This is where we played ball when we were older. 
 
-Morris Park was really a country village in those days. Five blocks south, Liberty Avenue was ``the end of the world.'' From there we walked through the woods (now Glen Morris) to the old water holes in the swamps of the Aqueduct. And we did not need bathing trunks for our swimming, the high grasses and cat-o-nine tails\footnote{a.k.a \href{http://en.wikipedia.org/wiki/Typha_latifolia}{\it Typha latifolia}, a wetland weed} hid us from view even if there was any one within hailing distance. 
+Morris Park was really a country village in those days. Five blocks south, Liberty Avenue was ``the end of the world.'' From there we walked through the woods (now Glen Morris) to the old water holes in the swamps of the Aqueduct. And we did not need bathing trunks for our swimming, the high grasses and cat-o-nine tails\footnote{a.k.a \href{http://en.wikipedia.org/wiki/Typha_latifolia}{\textit{Typha latifolia}}, a wetland weed} hid us from view even if there was any one within hailing distance. 
 
 Two events are the earliest recollection of my childhood. Both occurred at the first home in Morris Park. I was just a little toddler playing in the yard while Mom hung the wash. An Irish woman leaning out an upper window shouted that my pants were falling open (actual words censored). If a baby can be embarrassed, I was and so was Mom. It was peculiar that an incident like that can be remembered while other more important ones cannot. The other event was at a Thanksgiving or Christmas party in our flat. The Halidays and Grandma Morris were there and my little baby sister Vada was the center of attention. In some way, one of the glass dessert dishes was cracked and I swallowed a small chip of glass. Pandemonium broke loose with much shouting and wringing of hands probably brought about by my wailing. Finally some one thought of calling a doctor. He filled me full of crackers or bread, topped off with a large dose of castor oil. Evidently they found the glass. 
 
@@ -102,7 +105,7 @@ It was a monotonous treadmill of work with little time left for anything else an
 
 At one time he felt there was a market for a convenient hand washing compound. From his daily experience he knew the difficulty of washing grease and grime from his hands at the end of a day's work. His idea was a compressed washing powder about the diameter of a quarter and a quarter inch thick, packed in rolls like the old candy \href{http://en.wikipedia.org/wiki/Necco_Wafers}{Necco Wavers}. Held in the palms of the hands under the water tap it would dissolve and with a little rubbing remove the grease. He advertised for shop workers with little success. [Illegible] Later the big soap companies introduced hand washing compounds in paste form which met with the success that Pop had so much sought. 
 
-Another of his many inventions was a collapsible wooden crate for packing onions and other vegetables -- that could be returned to the farmer or produce dealer and reused. He patented the idea, incorporated a company under the name {\it American Crate Company} and sold stock to his friends. Then the promoter sold Pop on teh idea that he could sell the crate to the onion growers of Texas and departed with the remaining cash. Years later he sent shares of stock in an oil exploration company to Pop and to the stockholders of the Crate Company. They turned out to be as worthless as the crate company stock and ended another dream for Pop. 
+Another of his many inventions was a collapsible wooden crate for packing onions and other vegetables -- that could be returned to the farmer or produce dealer and reused. He patented the idea, incorporated a company under the name \textit{American Crate Company} and sold stock to his friends. Then the promoter sold Pop on teh idea that he could sell the crate to the onion growers of Texas and departed with the remaining cash. Years later he sent shares of stock in an oil exploration company to Pop and to the stockholders of the Crate Company. They turned out to be as worthless as the crate company stock and ended another dream for Pop. 
 
 We can return to our early days in Morris Park with Pop's venture in the retail grocery business. Three doors down the block from our flat was a little frame house, the front room of which had been converted into a store. Pop left the railroad, moved the family into the little house and opened a grocery store advertised as ``The Little Store with the Little Prices.'' One thing I recall about the house was the grape arbor forming a leafy corridor to a two-holer outhouse. Perhaps the corridor was not too long, but one time I didn't quite make its entire length much to the consternation of Mom and my own embarrassment. By way of extenuation it may be said that I was only four or five years old. 
 
@@ -140,7 +143,7 @@ I learned, however, through a different kind of incident that there are other ki
 
 Our new home was lighted with gas continuously by ``pay-as-you-go'' meters. One Sunday evening the lights went out and Pop asked me to go to the cellar and drop a quarter in the meter. To do so I had to go downstairs, through the dark store room and on down to the even darker cellar. I was searching for the slot in the meter when something scrambled away. I ran upstairs screaming and Pop went down and discovered a cat in the cellar. That was another experience that made me afraid of the dark.
 
-Mom was deeply religious and her training was reflected in our early formation of character. All of her social contracts were made at the First Methodist Episcopal Church of Morris Park and her children were drawn into the circle. On Sundays we attended the morning services with her. We could be found at Sunday school in the afternoon and after supper at the evening service with Mom. I can still recall sitting beside Mom and singing such hymns as {\it Jesus Lover of My Soul}, {\it Lead Kindnly Light} and {\it Rock of Ages}. When we were a little older we joined the Epworth League and attended those meetings just before the evening service. Sunday was indeed a crowded day. 
+Mom was deeply religious and her training was reflected in our early formation of character. All of her social contracts were made at the First Methodist Episcopal Church of Morris Park and her children were drawn into the circle. On Sundays we attended the morning services with her. We could be found at Sunday school in the afternoon and after supper at the evening service with Mom. I can still recall sitting beside Mom and singing such hymns as \textit{Jesus Lover of My Soul}, \textit{Lead Kindly Light} and \textit{Rock of Ages}. When we were a little older we joined the Epworth League and attended those meetings just before the evening service. Sunday was indeed a crowded day. 
 
 Wednesday was also a special day for Mom. On that evening she went to prayer meeting with a close friend and neighbor, Mrs. Bradford Wicks. Pop rarely attended any of the church services. 
 
@@ -148,7 +151,7 @@ Mom did not believe in any frivolity on Sundays. She would not let us play ``cat
 
 The Methodists were really strict in those days. Each service was an evangelistic meeting in itself with much talk of hell and brimstone. Dancing was frowned upon and drink was a curse. Mom would get real excited when a Catholic neighbor would pass the house with a tin pail on the way to a nearby saloon for a pint of beer. This was called ``rushing the growler'' and the tin pails were large enough to hold far more than a pint. She could not understand either why the Catholics would permit ball playing on Sundays or hold picnics or other festive affairs. 
 
-With no movies, radio, television or automobiles, the church -- no matter what the denomination -- was the social center of the community. Apart from religious services, in the summer there were strawberry festivals on the lawns of the church or private homes, trolley rides to Coney Island and picnics. In the winter there were straw rides in horse drawn sleighs or wagons, or house parties of the various societies.For the children there were two big events. One was the Anniversary Day Parade in early June with ice cream and cake awaiting them in the church basement at the end of the march. With bands playing such tunes as {\it Onward Christian Soldiers} and with the children decked out in their best clothes carrying banners and American flags, it really was a gala event. 
+With no movies, radio, television or automobiles, the church -- no matter what the denomination -- was the social center of the community. Apart from religious services, in the summer there were strawberry festivals on the lawns of the church or private homes, trolley rides to Coney Island and picnics. In the winter there were straw rides in horse drawn sleighs or wagons, or house parties of the various societies.For the children there were two big events. One was the Anniversary Day Parade in early June with ice cream and cake awaiting them in the church basement at the end of the march. With bands playing such tunes as \textit{Onward Christian Soldiers} and with the children decked out in their best clothes carrying banners and American flags, it really was a gala event. 
 
 The other big event for children was the Christmas party a few days after Christmas. Following the entertainment, Santa Claus handed boxes of candy and oranges to the children. Sometimes there would be presents from the teachers. One of the then popular G.A.~Henty books, dated December 25, 1902, in my library was a present from my Sunday School teacher, Skidmore Pettit, Jr. 
 
@@ -174,7 +177,7 @@ In penning a story of this type, one's thoughts come more quickly than they can 
 
 % Timeline: April 1903
 
-Pop continued in the grocery business until the latter part of 1903 and left it with a lot of money owing him and a lot of debts. He returned to work in the railrad shops and continued there until his retirement in 1921. We moved to a duplex house on Sherman Street. It was very much run-down and had no gas or central heating system. We used kerosene lamps and the kitchen range to provide most of the heat. Little portable cylinder-shaped oil stoves took the chill off the upstairs bed rooms but always with the danger of explosion or being tipped over. We were all very unhappy in the old house.
+Pop continued in the grocery business until the latter part of 1903 and left it with a lot of money owing him and a lot of debts. He returned to work in the railroad shops and continued there until his retirement in 1921. We moved to a duplex house on Sherman Street. It was very much run-down and had no gas or central heating system. We used kerosene lamps and the kitchen range to provide most of the heat. Little portable cylinder-shaped oil stoves took the chill off the upstairs bed rooms but always with the danger of explosion or being tipped over. We were all very unhappy in the old house.
 
 This place was less than a block from the railroad tracks running alongside the railroad shops. In those days the railroad was not electrified and the firing of the steam boilers on the moving locomotives would scatter pieces of coal on the tracks. I can recall walking the tracks with Chester hunting for such coal and half-burnt cinders. We would put them in a bag and drag them home to help feed the kitchen range. We were not asked to do this but we felt it was a contribution that might help Mom put a few extra pennies in the old cracker jar to buy needed shoes and clothing for the family. 
 
@@ -190,7 +193,7 @@ We were all very happy in the new home at 2 Briggs Ave. It was here that we spen
 
 Looking back, Mom must have had a difficult time during her pregnancy. It had been seventeen years since Chester was born. Childlike, we didn't understand her spells of depression and her tears at the slightest provocation. Later, when we were raising our own families we could appreciate the trying period she went through. As later events proved, Kenneth's entry into the family was the source of much happiness and contentment for Mom and Pop. This was particularly true in their declining years with the three other children married and away from home.
 
-Many, many pleasurable childhood memories are associated with the Briggs Avenue home. Playing marbles on a warm spring day under the big elm trees on the Atlantic Avenue side of the open field adjoining our house, jumping on the rear step of a passing horse-drawn ice wagon for a few chips of ice to suck on, climbing and hiding in the trees to puzzle passersby with water from our water pistols, playing ball in the open fields and on weekends sitting on the grandstand of the ball field just across the tracks watching our local heroes ``The Tigers'' play. In the winters there was the usual belly-wopping\footnote{sleigh riding on one's belly, according to {\it British-American Dictionary} (1996) by Catherine M.~McCormick} and playing in the snow. Mom would worry about our always-wet feet and when we returned she made us sit in front of the kitchen range with our feet on the edge of the open oven door. Sometimes we would take off our shoes and put them in the open oven for a quick dry. If we left them there too long the toes would curl up and make it pretty uncomfortable when we put them on again. The smell of wet leather is still reminiscent of those early winter days. 
+Many, many pleasurable childhood memories are associated with the Briggs Avenue home. Playing marbles on a warm spring day under the big elm trees on the Atlantic Avenue side of the open field adjoining our house, jumping on the rear step of a passing horse-drawn ice wagon for a few chips of ice to suck on, climbing and hiding in the trees to puzzle passersby with water from our water pistols, playing ball in the open fields and on weekends sitting on the grandstand of the ball field just across the tracks watching our local heroes ``The Tigers'' play. In the winters there was the usual belly-wopping\footnote{sleigh riding on one's belly, according to \textit{British-American Dictionary} (1996) by Catherine M.~McCormick} and playing in the snow. Mom would worry about our always-wet feet and when we returned she made us sit in front of the kitchen range with our feet on the edge of the open oven door. Sometimes we would take off our shoes and put them in the open oven for a quick dry. If we left them there too long the toes would curl up and make it pretty uncomfortable when we put them on again. The smell of wet leather is still reminiscent of those early winter days. 
 
 Then there were the chores -- some not so pleasurable. The new home was heated with a coal burning furnace in the cellar which made a lot of ashes. On Saturday mornings it was our job to sift the ashes for pieces of half-burnt coal that had dropped through the grate. These were used to bank the fire at night. The sifting kicked up a lot of dust and we really needed that weekly Saturday night bath.
 
@@ -253,7 +256,7 @@ To the teenager of today, all of this may seem tame. However, one must realize t
 
 Outdoor sports were no different than today. We had our baseball team, the Mohawks with a field in Glen Morris, and as mentioned earlier, our tennis club and courts. It may seem odd but those two sports in which skill depended upon speed an keeping your eyes on the ball taught me a lesson which I have never forgotten and was a stimulating force in m business efforts. Years later when I was working desperately in a large corporation to overcome my lack of academic education in competition with college men, I would continually strive to keep my eyes on the ``ball''. In my dreams at night I would hear the impact of the bat on the ball and see the ball soaring into the outfield. I would awaken with the conviction that I could and must keep my eyes on the objectives of the job in hand and really it them hard. By doing that I would have no fear of competition. 
 
-Occasionally Wad smith would bring his baseball team from Brooklyn to play our team. He and I also played a lot of tennis -- a game we played together well into middle life. His father had purchased a small summer bungalow in a new development in Allendale, Staten Island> The developers had built a community club house and a couple of tennis courts. Here we played literally from dawn to dusk on those weekends I was the guest of Wad.
+Occasionally Wad smith would bring his baseball team from Brooklyn to play our team. He and I also played a lot of tennis -- a game we played together well into middle life. His father had purchased a small summer bungalow in a new development in Allendale, Staten Island. The developers had built a community club house and a couple of tennis courts. Here we played literally from dawn to dusk on those weekends I was the guest of Wad.
 
 For a couple of weeks one summer, Chester and I and six or seven of the Richmond Hill boys pitched a camp in the woods on the west shore of Lake Ronkonkoma. At that time, Ronkonkoma was very sparsely settled and the lake little used by tourists. It was very picturesque and if a dozen persons were seen on the beach near Hoyt's dock we would have considered it crowded. Another year I spent a vacation of a week or so at Comp Wopowog in Hampton, Connecticut. With Wad's crowd I also roughed it for a short time at a cabin on Cedar Lake near Denville, New Jersey. The cabin was loaned to us by the father of one of Wad's friends. 
 
@@ -302,6 +305,8 @@ After three or four years, I began assisting in sales. I was given the South Bro
 % Timeline: 1917
 
 Meanwhile, home in Richmond Hill our social activities were humming along as outlined in a previous part of this story. Wad Smith had taken a job with the Brooklyn Daily Eagle and we were together quite a little in Brooklyn and in Richmond Hill. I was as much at home with his friends as he was with mine. So between the two groups I was kept busy -- socially at least. As our apartment on Briggs Avenue was a bit crowded, Pop and I partitioned off two rooms in the attic with plaster board. They were fairly large rooms but bitter cold in the winter as it was not piped for heat. I would have to undress in the kitchen on these cold nights and hustle into bed under a half-ton of blankets. Later, when Grandma LaBonte came to live with us, she had the other room. She was ill and senile at times. On several occasions during the night she would fall out of bed and I would grope through to her room and lift her back into bed. Mother had a difficult time as Grandma Morris, also ill, lived with us before Grandma LaBonte came. Grandma Morris died in 1917 two days before her brother, David Swayze. Grandma LaBonte died in 1919. 
+
+% HEREHERE
 
 Chester had been keeping company with a little auburn haired girl Lizetta Letts for two or three years. Lizetta lived down the avenue diagonally across from our first home in Morris Park. After Chester met Lizetta, no other girl meant anything to him. They were married in 1915 in her home. It was quite a wedding. Most of our and their relatives were there. I am thinking particularly of Carrie Mather, mother's sister, her husband Raymond and their two children, Fred who was a little older than Chester and Effie, a beautiful young woman, who was about Chester's age. Fred would visit us occasionally but Effie and her father we lost track of. Uncle Raymond was a heavy drinker and years later Aunt Carrie left him and lived with the folks in Ronkonkoma as a result of that broken home. 
 
@@ -357,12 +362,10 @@ A short time before the war, Wad had taken a job as a secretary with J.P.~Morgan
 
 On February 27, I received orders to report to the \href{http://en.wikipedia.org/wiki/USAT_Buford}{United States transport Buford} upon arrival in port. I checked daily but had no word of its arrival. She was long overdue. On March 9, I read the following Universal Service dispatch in the press:
 
-% indent this
 \begin{quote}
 ``Newport News, March 9 -- After floundering in heavy seas for twenty-one days, losing her course many times in a terrific storm, the United Stats transport Buford, with 1025 returning soldiers on board, came into port to-day. She was towed by rescue tugs that picked her up off Cape Henry late yesterday. 
 
 Fuel was almost exhausted and the steering gear gone when an S.O.S.~was picked up by tugs that rescued her after a terrific battle with the waves.''
-% indent this
 \end{quote}
 
 I wasn't too pleased with this news and wondered what was ahead of me. I took off for my assignment the next day and as it was late in the evening when I arrived I checked in at a hotel. The next morning I decided to get my bearings on the hereabouts of the ship before reporting. I discovered that the Buford was an old merchant ship taken over by the Navy as an Army transport. Alongside the trim naval ships at dock, she ever did look shabby. With the takeover of the ship by the Navy, the civilian officers had been commissioned as Naval officers. 
@@ -374,6 +377,7 @@ Fortunately for me, a raw Naval Reserve Supply Officer, the Chief Yeoman assigne
 The first night on the Buford I joined a group of officers and a civilian salesman for a game of poker at a hotel. One of them produced some liquid refreshment which resulted in more of a drinking bout then a card game. The civilian got a bit out of control and two of the officers were forcibly restrained by the others from throwing him out the window. So ended another episode in my efforts to be accepted as a regular guy by those ex-merchant sailors. 
 
 A few days later the Buford took off for France but didn't get much beyond the harbor before there was more propeller trouble and she was forced to return to the dock. Thus ended my military duty for two weeks later I was detached from active duty and returned home on March 22, 1919. Like many, many other volunteers, we had no battle scars or had won honors in fighting. But we had gained a lot of experience which I think was helpful in the battle for business survival and progress in the years ahead. Back in civilian life I was eager to resume my old job with DeBevoise. 
+% Insert footnote here that explains that the Buford actually had a decorated history after his time on it.
 
 \chapter{Back To Civilian Life}
 
@@ -503,7 +507,7 @@ Retrenchment was the order of the day in all areas of the business including com
 
 A new life was unfolding for Mabel and me. Because of the depression, we were concerned with the uncertainties of the future but not nearly to the extent we were while in the candy business. The fact that I had weathered the first storm in the new job and apparently had been accepted as a member of the team in big business gave us renewed confidence. There were to be many disappointments and frustrations ahead but our optimism in 1929 prevailed as we felt more secure than we had in the past several years. 
 
-With Mom and Pop Morris living in Ronkonkoma, their home had become the focal point for family reunions. The pleasant oak grove on the property was an ideal place for picnicking. Most of the family lived nearby. Kenneth was living at home with the folks. After his graduation from Sayville High School, he secured a job with the Supply Department of GM Export in New York and like Pop was commuting to work. Vada an dRoy lived in Smithtown where Roy was manager of a chicken farm. They had two lively youngsters, Miriam, born in 1920, and Donald in 1922. Chester and Lizetta lived in Bellerose where he had bought a house. They also had two children -- Evelyn, born in 1916, and Roger in 1920, the same year as Miriam. Following a number of jobs with Wall Street brokerage houses, Chester was with the \href{http://en.wikipedia.org/wiki/Federal_Reserve_Bank_of_New_York}{Federal Reserve Bank of New York} in New York. Mabel and I in Brooklyn were within an hour and a half drive (over the highways of today, the trip can be made in less than an hour). 
+With Mom and Pop Morris living in Ronkonkoma, their home had become the focal point for family reunions. The pleasant oak grove on the property was an ideal place for picnicking. Most of the family lived nearby. Kenneth was living at home with the folks. After his graduation from Sayville High School, he secured a job with the Supply Department of GM Export in New York and like Pop was commuting to work. Vada and Roy lived in Smithtown where Roy was manager of a chicken farm. They had two lively youngsters, Miriam, born in 1920, and Donald in 1922. Chester and Lizetta lived in Bellerose where he had bought a house. They also had two children -- Evelyn, born in 1916, and Roger in 1920, the same year as Miriam. Following a number of jobs with Wall Street brokerage houses, Chester was with the \href{http://en.wikipedia.org/wiki/Federal_Reserve_Bank_of_New_York}{Federal Reserve Bank of New York} in New York. Mabel and I in Brooklyn were within an hour and a half drive (over the highways of today, the trip can be made in less than an hour). 
 
 I think that my brothers and sister will agree that our family in those years experienced the maximum togetherness. We had our parents and at that period of our young married lives, the family was a close-knit unit. As in all families, however, with the passage of years and as the families of the children mature and in turn have families of their own, each becomes a unit of togetherness of its own. This is true particularly after the passing of our parents and we become the ``old folks'' and heads of our own family units -- children and grandchildren. It is a natural evolution of family life with no loss of love within the original family but with the newer units becoming the absorbing interest.
 
@@ -518,22 +522,6 @@ At our ages, it was this realization that drew us to Ronkonkoma and to enjoy get
 \end{figure}
 In 1930, or perhaps a year or so earlier, Pop put up a sign in the grove ``Morris Oak Grove Camp -- Comfortable Camping.'' The camp was built around the little shack he had built on his property across the tracks and moved to the grove. Another little smaller place was built together with two wooden platforms on which he erected tents. This was the camp. I still have a letter head I designed showing the same wording and including a partial picture of the camp in which were two little boys -- Roger and Donald -- in the foreground. There was a lot of extra work involved in maintaining the camp and with only meager earnings for Pop and Mom. Some of the campers became close friends of the folks and returned year after year. 
 
-% there's an add for the oak grove in The Brooklyn Daily Eagle from Brooklyn, New York, on June 17, 1931 on page 26; and on The Brooklyn Daily Eagle from Brooklyn, New York á Page 61 from Sunday, June 7, 1936
-% http://bklyn.newspapers.com/image/52832115/?terms=Morris+Oak+Grove+Camp
-% http://bklyn.newspapers.com/image/58263154/?terms=Morris+Oak+Grove+Camp
-
-% Also found obituary for Ann Morris and David Swayze: 
-% http://bklyn.newspapers.com/image/53892463/?terms=Isaac+Morris
-
-% Also found an obituary for Chas. A Norseen, Mabel's father. 
-% http://bklyn.newspapers.com/image/52644213/?terms=James+A.+Morris
-
-% Marriage announcement of Kenneth and Alice!
-% http://bklyn.newspapers.com/image/59844125/?terms=%22Isaac+J.+Morris%22
-
-% Reference to the arrival of Al and Mabel ...somewhere? 
-% http://bklyn.newspapers.com/image/52700667/?terms=%22James+A.+Morris%22
-
 Kenneth, meanwhile, had fallen in love with a young Sayville School teacher -- Alice Sisson -- and decided to build a house in the grove alongside of the folk's house for their first home after marriage. He and a young architect friend planned and built the house themselves. They were both out of jobs. Kenneth had felt the full impact of the depression at General Motors and like many other young men without experience found it difficult to land another. The house they built was very comfortable and good looking. It had four rooms and bath. The outside was made of California redwood logs. On July 1, 1933, Kenneth and Alice ``eloped'' and were married in Harrison, New York. Meanwhile, Kenneth had secured a job with the South Bay Water Company in Patchogue as a helper. A job which often times required him to dig ditches for the laying of pipes. Roy, who had been with the water company for a couple of years, was his first boss. As will be related later, Kenneth moved up rapidly and at this writing holds an important executive post with a successor of that company. 
 \begin{figure}
 \centering
@@ -541,17 +529,76 @@ Kenneth, meanwhile, had fallen in love with a young Sayville School teacher -- A
 \caption{The marriage announcement of Kenneth Morris and Alice Sisson from the Brooklyn Daily Eagle, printed July 3, 1933, page 15. [Source: \url{http://bklyn.newspapers.com/image/59844125/}, accessed August 3, 2014]}
 \end{figure}
 
+All of the family were elated about the marriage and the fact that Kenneth and Alice were living next door to the folks. Mom had been lonesome in Ronkonkoma. She had left her church and friends in Richmond Hill. While she had made new friendships, new friendships formed in later life are seldom as close as the old ones. Now, with her youngest son and Alice, whom she liked very much, living alongside of her she was much happier. 
 
+In Brooklyn, Mabel and I were quite busy in social activities. In addition to our local group, we were now involved with Wad's friends, mostly GM people, in Maplewood, New Jersey. We had built a large and beautiful home in that village on a large plot with many trees and a brook. Merle lived in Nutley, New Jersey, which is about a half hour drive from Maplewood. Both Wad and Merle were ``in the money,'' so to speak, as were most of the others of their group. Mabel and I, income-wise, were at the bottom of the heap. While the others had been profiting by the outstanding prosperity of the period, I had been in a profitless business. They had not yet felt the full impact of the depression. 
 
+As a consequence, the social life we had been initiated into was somewhat hectic and wild. Entertaining at the home of both Wad and Merle was on a lavish scale. Often times, we would start an evening at the home of one and end up at the home of the other. And with all this, we worked hard at our jobs. Our fully-packed briefcases were always at home with us and after such evenings, with the prospects of the job ahead of us the next day, we would open our briefcases and go to work regardless of the time of night.
 
+In those days at the end of the post-World War One inflationary period, it seemed to be the natural thing to play just as hard as you worked. That philosophy was followed largely by those young executives who had ``rode the wave of business prosperity'' and had gone up the ladder of business success very rapidly -- sometimes too rapidly. Only the strong could survive such a pace. The weaker ones, physically, had to choose which course to follow. If the emphasis for them was on play, then there was little hope that they could work hard. With the worsening of the depression, however, the pressures of the job -- the holding of the job, itself -- did not permit one to play hard as there was little energy left to do so. 
 
+\chapter{Fatherhood}
 
+Wad had three young boys -- his stepson, Hack, Edgar and Robert. Merle had a daughter, Jane, and most of our other friends had had children for several years. Mabel and I were the exception and had become resigned to being childless. But toward the end of 1932 we discovered that the stork was on the way with a package for us. However, the discovery was not made until a ``get-rich-quick'' doctor had operated on Mabel for an alleged tumor. This deception caused us much anxiety and concerned as to its effect on Mabel and the unborn child. Later efforts on our part to hold the doctor accountable were without avail. The medical profession had a code of its own.
 
+On the afternoon of July 28, 1922, when Mabel heard our child knocking on the door, I drove her to the Midwood Hospital in Brooklyn. The following morning -- July 29 at 8 am -- a lusty boy weighing nearly eight pounds came into the world to bless us. During that long night I do not know which of us had the hardest time bringing James Alfred Morris Jr., into the world. I had not left the hospital all night, and like all near-prospective fathers, not knowing what was going on upstairs, really did have some fearsome thoughts. However, Mabel did all right without my help. And we had a son -- James Alfred Morris Jr., whose mother was 34 years of age and his father, 40. We were very, very happy. 
 
+Unfortunately, the operation plus the not-too-easy child birth hit Mabel rather hard. After leaving the hospital she was confined to bed at home for a couple of weeks. We secured a nurse to care for Jimmie and had her with us for several weeks. When she left, we hired a maid to take care of the house work and had a succession of maids over the next eight or nine years. (In 1933 our first maid received wages of \$20 a month. In 1963 comparable help would cost between \$125 and \$150 a month.\footnote{For a still more recent reference, \$1,168 in 2014 has the same buying power as \$150 did in 1963, according to the \href{http://data.bls.gov/cgi-bin/cpicalc.pl}{Bureau of Labor Statistics CPI Inflation Calculator}})
 
+I don't think any of the younger married couples were more happy than we were with the birth of a first child. Like them, we had to learn to do a lot of necessary things -- to get up in the dead of night in answer to a cry without stubbing your toe against a bed leg, to hum softly and harmoniously when trying to quiet the baby, to heat a bottle at just the right temperature and to shake the milk on your wrist to be sure it is, to use unintelligible baby talk, to push a baby carriage around a corner without upsetting it, and to change a diaper without sticking a pin into the baby. To this day, Mabel declares that I never learned how to do any of these things properly, particularly in the diaper department. Maybe she is right, but I tried hard. 
 
-
+Like all new fathers, I wanted to be able to give our son advantages that were not available to me and determined to apply myself even harder to my job. But that was difficult to do because I had been working just as hard as I could. Fortunately, on July 1, 28 days before Jimmy was born, I had been transferred to the Corporation as an assistant to Mr.~Mooney who was the [Illegible] executive in charge of the Overseas Operations and I had received a small raise in pay. This new assignment seemed to be a recognition of my efforts and certainly boosted my morale. However, the trend of the economy was still uncertain and business weak. One never knew when further expense retrenchments in the business would be necessary. It was a case of working hard to retain a job rather than to go forward.
 
 
 
 \end{document}
+
+Resources: 
+
+ Isaac might have been a childhood theif: these dates line up: 
+ http://bklyn.newspapers.com/image/50447494/?terms=%22long+island%22+%22isaac+morris%22
+
+ there's an add for the oak grove in The Brooklyn Daily Eagle from Brooklyn, New York, on June 17, 1931 on page 26; and on The Brooklyn Daily Eagle from Brooklyn, New York á Page 61 from Sunday, June 7, 1936
+ http://bklyn.newspapers.com/image/52832115/?terms=Morris+Oak+Grove+Camp
+ http://bklyn.newspapers.com/image/58263154/?terms=Morris+Oak+Grove+Camp
+ 
+ Also found obituary for Ann Morris and David Swayze: 
+ http://bklyn.newspapers.com/image/53892463/?terms=Isaac+Morris
+ Put this at HEREHERE
+ 
+ 
+ Also found an obituary for Chas. A Norseen, Mabel's father. 
+ http://bklyn.newspapers.com/image/52644213/?terms=James+A.+Morris
+ 
+ Marriage announcement of Kenneth and Alice!
+ http://bklyn.newspapers.com/image/59844125/?terms=%22Isaac+J.+Morris%22
+ 
+ Reference to the arrival of Al and Mabel ...somewhere? 
+ http://bklyn.newspapers.com/image/52700667/?terms=%22James+A.+Morris%22
+ 
+ Passing of Birdella: http://bklyn.newspapers.com/image/52654292/?terms=Birdella+L.+Morris
+ 
+ Passing of Aunt addie: 
+\begin{figure}
+\centering
+\includegraphics[scale=0.03]{images/The_Brooklyn_Daily_Eagle_Mon__Jan_7__1946_.jpg}
+\caption{The death announcement of (Aunt) Addie Morris in the Brooklyn Daily Eagle, printed January 7, 1946, page 7. [Source: \url{http://bklyn.newspapers.com/image/52883100/}, accessed August, 2014]}
+\end{figure}
+
+
+Next things to search for: 
+Walter W.~DeBevoise and candy company
+
+First Methodist Episcopal Church of Morris Park, and Anniversary Day celebrations
+
+Dusenberg's candy store
+
+Commercial High School on Albany Avenue, Brooklyn (and insert picture)
+
+Brooklyn Training School for Teachers
+
+Loomis Sanatorium in Liberty, New York
+
+Export Division's first Transportation Conference (in Detroit newspapers?)
+
+Sayville High School (in 1920s)
