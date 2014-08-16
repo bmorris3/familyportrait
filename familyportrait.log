@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  10 AUG 2014 17:07
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  15 AUG 2014 20:43
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -638,14 +638,13 @@ File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-(./familyportrait.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 1.
-) [3] [4
+
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
+\tf@toc=\write5
+\openout5 = `familyportrait.toc'.
+
+[3] [4
 
 ] [1
 
@@ -658,6 +657,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 97.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 97.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 97.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 99.
 
@@ -728,7 +733,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29]
-<images/The_Brooklyn_Daily_Eagle_Fri__Mar_16__1917_.jpg, id=217, 4849.11626pt x
+<images/The_Brooklyn_Daily_Eagle_Fri__Mar_16__1917_.jpg, id=172, 4849.11626pt x
  3779.11874pt>
 File: images/The_Brooklyn_Daily_Eagle_Fri__Mar_16__1917_.jpg Graphic file (type
  jpg)
@@ -822,7 +827,7 @@ Underfull \vbox (badness 2762) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [60]
-<images/The_Brooklyn_Daily_Eagle_Wed__Jun_17__1931_.jpg, id=381, 4981.61125pt x
+<images/The_Brooklyn_Daily_Eagle_Wed__Jun_17__1931_.jpg, id=339, 4981.61125pt x
  2456.17625pt>
 File: images/The_Brooklyn_Daily_Eagle_Wed__Jun_17__1931_.jpg Graphic file (type
  jpg)
@@ -830,7 +835,7 @@ File: images/The_Brooklyn_Daily_Eagle_Wed__Jun_17__1931_.jpg Graphic file (type
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [61]
-<images/The_Brooklyn_Daily_Eagle_Mon__Jul_3__1933_.jpg, id=388, 5041.83624pt x 
+<images/The_Brooklyn_Daily_Eagle_Mon__Jul_3__1933_.jpg, id=346, 5041.83624pt x 
 5515.60625pt>
 File: images/The_Brooklyn_Daily_Eagle_Mon__Jul_3__1933_.jpg Graphic file (type 
 jpg)
@@ -872,23 +877,38 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [76]
-[77] [78]
-\tf@toc=\write5
-\openout5 = `familyportrait.toc'.
+[77]
+Underfull \vbox (badness 2762) has occurred while \output is active []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 653.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 653.
+ [78]
+Underfull \vbox (badness 1603) has occurred while \output is active []
+
+ [79]
+[80] [81]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [82]
+[83] [84] [85]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 731.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 731.
  (./familyportrait.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 653.
-Package rerunfilecheck Info: File `familyportrait.out' has not changed.
-(rerunfilecheck)             Checksum: 67DA56209426B58DFDAB33BB464ACD96;520.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 731.
+
+
+Package rerunfilecheck Warning: File `familyportrait.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `familyportrait.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  67DA56209426B58DFDAB33BB464ACD96;520.
  ) 
 Here is how much of TeX's memory you used:
- 9208 strings out of 493747
- 135189 string characters out of 3143546
- 242264 words of memory out of 3000000
- 12299 multiletter control sequences out of 15000+200000
- 12718 words of font info for 46 fonts, out of 3000000 for 9000
+ 9201 strings out of 493747
+ 135072 string characters out of 3143546
+ 242160 words of memory out of 3000000
+ 12287 multiletter control sequences out of 15000+200000
+ 12411 words of font info for 45 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  38i,12n,38p,1609b,456s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
@@ -903,10 +923,10 @@ texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
 exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/te
 xlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/tex
 live/2010/texmf-dist/fonts/type1/public/wasy/wasy10.pfb>
-Output written on familyportrait.pdf (82 pages, 2674957 bytes).
+Output written on familyportrait.pdf (89 pages, 2694389 bytes).
 PDF statistics:
- 563 PDF objects out of 1000 (max. 8388607)
- 456 compressed objects within 5 object streams
- 98 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 568 PDF objects out of 1000 (max. 8388607)
+ 454 compressed objects within 5 object streams
+ 105 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
