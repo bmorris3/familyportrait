@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  17 AUG 2014 13:33
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  17 AUG 2014 13:52
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -594,10 +594,10 @@ LaTeX Info: Redefining \nameref on input line 38.
 
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 50.
+(Font)              <14.4> on input line 48.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 50.
-LaTeX Font Info:    Try loading font information for U+wasy on input line 50.
+(Font)              <7> on input line 48.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 48.
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
@@ -636,7 +636,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 106.
+(Font)              <5> on input line 104.
 
 Underfull \vbox (badness 2762) has occurred while \output is active []
 
@@ -756,7 +756,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [49]
-Overfull \hbox (15.76819pt too wide) in paragraph at lines 454--455
+Overfull \hbox (15.76819pt too wide) in paragraph at lines 452--453
 []\OT1/cmr/m/n/12 Fortunately, I met a fel-low sales-man, Char-lie Schwartz, wh
 o lived in Philadelpia
  []
@@ -988,17 +988,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \tf@toc=\write5
 \openout5 = `familyportrait.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1082.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1082.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1080.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1080.
  (./familyportrait.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1082.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1080.
 Package rerunfilecheck Info: File `familyportrait.out' has not changed.
 (rerunfilecheck)             Checksum: 8DB29660E8A1E212C98B82F108A981E8;658.
  ) 
 Here is how much of TeX's memory you used:
  8397 strings out of 493747
  119992 string characters out of 3143546
- 225223 words of memory out of 3000000
+ 225280 words of memory out of 3000000
  11429 multiletter control sequences out of 15000+200000
  12718 words of font info for 46 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
@@ -1015,7 +1015,7 @@ texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
 exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/te
 xlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/tex
 live/2010/texmf-dist/fonts/type1/public/wasy/wasy10.pfb>
-Output written on familyportrait.pdf (140 pages, 4432398 bytes).
+Output written on familyportrait.pdf (140 pages, 4434005 bytes).
 PDF statistics:
  1066 PDF objects out of 1200 (max. 8388607)
  893 compressed objects within 9 object streams
