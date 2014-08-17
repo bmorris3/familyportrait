@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  16 AUG 2014 15:02
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  16 AUG 2014 19:37
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -645,6 +645,16 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 1.
+
+Overfull \hbox (2.03766pt too wide) detected at line 11
+ \OT1/cmr/bx/n/12 109
+ []
+
+
+Overfull \hbox (2.03766pt too wide) detected at line 12
+ \OT1/cmr/bx/n/12 115
+ []
+
 ) [3] [4
 
 ] [1
@@ -728,7 +738,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29]
-<images/The_Brooklyn_Daily_Eagle_Fri__Mar_16__1917_.jpg, id=217, 4849.11626pt x
+<images/The_Brooklyn_Daily_Eagle_Fri__Mar_16__1917_.jpg, id=227, 4849.11626pt x
  3779.11874pt>
 File: images/The_Brooklyn_Daily_Eagle_Fri__Mar_16__1917_.jpg Graphic file (type
  jpg)
@@ -822,7 +832,7 @@ Underfull \vbox (badness 2762) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [60]
-<images/The_Brooklyn_Daily_Eagle_Wed__Jun_17__1931_.jpg, id=381, 4981.61125pt x
+<images/The_Brooklyn_Daily_Eagle_Wed__Jun_17__1931_.jpg, id=391, 4981.61125pt x
  2456.17625pt>
 File: images/The_Brooklyn_Daily_Eagle_Wed__Jun_17__1931_.jpg Graphic file (type
  jpg)
@@ -830,7 +840,7 @@ File: images/The_Brooklyn_Daily_Eagle_Wed__Jun_17__1931_.jpg Graphic file (type
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [61]
-<images/The_Brooklyn_Daily_Eagle_Mon__Jul_3__1933_.jpg, id=388, 5041.83624pt x 
+<images/The_Brooklyn_Daily_Eagle_Mon__Jul_3__1933_.jpg, id=398, 5041.83624pt x 
 5515.60625pt>
 File: images/The_Brooklyn_Daily_Eagle_Mon__Jul_3__1933_.jpg Graphic file (type 
 jpg)
@@ -887,7 +897,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [85]
-<images/The_Brooklyn_Daily_Eagle_Wed__Jun_3__1942_.jpg, id=546, 4887.25874pt x 
+<images/The_Brooklyn_Daily_Eagle_Wed__Jun_3__1942_.jpg, id=556, 4887.25874pt x 
 2592.68625pt>
 File: images/The_Brooklyn_Daily_Eagle_Wed__Jun_3__1942_.jpg Graphic file (type 
 jpg)
@@ -912,22 +922,88 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [96]
-[97] [98]
+[97]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [98]
+<images/The_Brooklyn_Daily_Eagle_Wed__Apr_4__1951_.jpg, id=660, 2658.93375pt x 
+6670.9225pt>
+File: images/The_Brooklyn_Daily_Eagle_Wed__Apr_4__1951_.jpg Graphic file (type 
+jpg)
+ <use images/The_Brooklyn_Daily_Eagle_Wed__Apr_4__1951_.jpg>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [99 <./images/The_Brooklyn_Daily_Eagle_Wed__Apr_4__1951_.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [100]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [101]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [102]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [103]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [104]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [105]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [106]
+[107] [108]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [109
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [110]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [111]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [112]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [113]
+[114]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [115
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [116]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [117]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [118]
+[119]
 \tf@toc=\write5
 \openout5 = `familyportrait.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 827.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 827.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 965.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 965.
  (./familyportrait.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 827.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 965.
 Package rerunfilecheck Info: File `familyportrait.out' has not changed.
-(rerunfilecheck)             Checksum: 67DA56209426B58DFDAB33BB464ACD96;520.
+(rerunfilecheck)             Checksum: 0EBEB7912F58FA69978025371DB114CB;613.
  ) 
 Here is how much of TeX's memory you used:
- 9234 strings out of 493747
- 135616 string characters out of 3143546
+ 9269 strings out of 493747
+ 136146 string characters out of 3143546
  243264 words of memory out of 3000000
- 12303 multiletter control sequences out of 15000+200000
+ 12313 multiletter control sequences out of 15000+200000
  12718 words of font info for 46 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  38i,12n,38p,1974b,456s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -943,10 +1019,10 @@ texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
 exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/te
 xlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/tex
 live/2010/texmf-dist/fonts/type1/public/wasy/wasy10.pfb>
-Output written on familyportrait.pdf (102 pages, 3228526 bytes).
+Output written on familyportrait.pdf (123 pages, 4395068 bytes).
 PDF statistics:
- 718 PDF objects out of 1000 (max. 8388607)
- 588 compressed objects within 6 object streams
- 119 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 898 PDF objects out of 1000 (max. 8388607)
+ 743 compressed objects within 8 object streams
+ 143 named destinations out of 1000 (max. 500000)
+ 122 words of extra memory for PDF output out of 10000 (max. 10000000)
 

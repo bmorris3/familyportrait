@@ -8,3 +8,5 @@
 \contentsline {chapter}{\chapternumberline {7}Beginning at General Motors}{55}{chapter.7}
 \contentsline {chapter}{\chapternumberline {8}Fatherhood}{65}{chapter.8}
 \contentsline {chapter}{\chapternumberline {9}Jimmy In The Center}{73}{chapter.9}
+\contentsline {chapter}{\chapternumberline {10}To Europe}{109}{chapter.10}
+\contentsline {chapter}{\chapternumberline {11}Retirement}{115}{chapter.11}
