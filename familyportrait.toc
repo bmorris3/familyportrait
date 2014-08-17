@@ -1,12 +1,13 @@
 \contentsline {chapter}{Contents}{iii}{section*.2}
 \contentsline {chapter}{\chapternumberline {1}The Story Begins}{3}{chapter.1}
-\contentsline {chapter}{\chapternumberline {2}Memory begins to crystallize}{9}{chapter.2}
-\contentsline {chapter}{\chapternumberline {3}A New Era}{19}{chapter.3}
-\contentsline {chapter}{\chapternumberline {4}Office Work}{25}{chapter.4}
-\contentsline {chapter}{\chapternumberline {5}The First World War}{33}{chapter.5}
-\contentsline {chapter}{\chapternumberline {6}Back To Civilian Life}{41}{chapter.6}
-\contentsline {chapter}{\chapternumberline {7}Beginning at General Motors}{55}{chapter.7}
-\contentsline {chapter}{\chapternumberline {8}Fatherhood}{65}{chapter.8}
-\contentsline {chapter}{\chapternumberline {9}Jimmy In The Center}{73}{chapter.9}
-\contentsline {chapter}{\chapternumberline {10}To Europe}{109}{chapter.10}
-\contentsline {chapter}{\chapternumberline {11}Retirement}{115}{chapter.11}
+\contentsline {chapter}{\chapternumberline {2}A New Era}{19}{chapter.2}
+\contentsline {chapter}{\chapternumberline {3}Office Work}{25}{chapter.3}
+\contentsline {chapter}{\chapternumberline {4}The First World War}{33}{chapter.4}
+\contentsline {chapter}{\chapternumberline {5}Back To Civilian Life}{41}{chapter.5}
+\contentsline {chapter}{\chapternumberline {6}Beginning at General Motors}{55}{chapter.6}
+\contentsline {chapter}{\chapternumberline {7}Fatherhood}{65}{chapter.7}
+\contentsline {chapter}{\chapternumberline {8}Jimmy In The Center}{73}{chapter.8}
+\contentsline {chapter}{\chapternumberline {9}The Second World War}{81}{chapter.9}
+\contentsline {chapter}{\chapternumberline {10}Public Relations}{99}{chapter.10}
+\contentsline {chapter}{\chapternumberline {11}To Europe}{113}{chapter.11}
+\contentsline {chapter}{\chapternumberline {12}Retirement}{119}{chapter.12}
