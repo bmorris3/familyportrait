@@ -1,4 +1,4 @@
-Family Portrait: The Memoirs of James Alfred Morris
+"Family Portrait": The Autobiography of James Alfred Morris
 ==============
 
 My father passed on to me a manuscript of my great-grandfather's autobiography, which was never properly edited and printed. I'm typesetting the manuscript in LaTeX and storing the project here, while editing it collaboratively with family. 
