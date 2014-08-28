@@ -1,0 +1,196 @@
+%% Compaile with LuaLaTeX!
+\documentclass{article}
+
+\usepackage[paperwidth=8.5in, paperheight=16in, margin=0.5 in]{geometry}
+
+\usepackage[utf8]{inputenc}
+%\usepackage[margin=1 in]{geometry}
+\usepackage{tikz}
+%\usetikzlibrary{mindmap}
+\pagestyle{empty}
+%\usetikzlibrary{graphs}
+\usetikzlibrary{graphdrawing}
+%\usegdlibrary{trees} % LATEX and plain TEX
+\usepackage{pdflscape}
+
+\tikzset{
+    every rectangle node/.style={
+        align=center,
+        text width=1.2cm,
+        font=\footnotesize
+    }
+}
+
+\begin{document}
+
+\begin{landscape}
+\begin{tikzpicture}
+\node[rectangle,draw] (hannah) at (-1, 0) {Hannah Terry Morris};
+\node[rectangle,draw] (jacob) at (1, 0) {Jacob Morris};
+\node[coordinate] (centered-2) at (0, 0) {}
+child {
+    node[rectangle,draw] (charles) at (0, -1) {Charles S. Morris}
+    node[rectangle,draw] (ann) at (2, -1) {Ann Newman Morris}
+    node[coordinate] (centered-1) at (1, -1) {}
+    child {
+            node[rectangle,draw] (addie) at (-1, -1) {Addie Elizabeth Morris}
+          }
+    child {
+            node[rectangle,draw] (isaac) at (1, -1) {Isaac J. Morris}%; 
+            node[rectangle,draw] (birdella) at (3, -1) {Birdella LaBonte Morris}%;
+            node[coordinate] (centered0a) at (2, -1) {}
+            child {
+                node[coordinate] (offset) at (0, -0.5) {}
+                child {
+                       node[rectangle,draw] (james) at (-10, -1) {James Alfred Morris}
+                       node[rectangle,draw] (mabel) at (-12, -1) {Mabel Norseen}
+                       node[coordinate] (centered1) at (-11, -1) {}
+                       child { 
+                              node[rectangle,draw] (jimmie) at (0, -1) {James A. Morris Jr.}
+                              node[rectangle,draw] (vandy) at (-2, -1) {Vandy Weldon Morris}
+                              node[coordinate] (centered2) at (-1, -1) {}
+                              child {
+                                     node[rectangle,draw] (karenv) at (-0.5, -1) {Karen Morris Von Braunsberg}
+                                     node[rectangle,draw] (sean) at (-2.5, -1) {Sean Von Braunsberg}
+                                    }
+                              child {
+                                     node[rectangle,draw] (scott) at (0.5, -1) {Scott Weldon Morris}
+                                     node[rectangle,draw] (shari) at (2.5, -1) {Shari Stark Morris}
+                                    }
+                             }
+                       }
+                child {
+                      node[rectangle,draw] (chester) at (-3, -1) {Chester Morris}
+                      node[rectangle,draw] (lizetta) at (-5, -1) {Lizetta Morris}
+                      node[coordinate] (centered3) at (-4, -1) {}
+                      child {
+                             node[rectangle,draw] (roger) at (-1, -1) {Roger Morris}
+                             node[rectangle,draw] (ceil) at (-3, -1) {Ceil Weisse Morris}
+                             node[coordinate] (centered4) at (-2, -1) {}
+                             child {
+                                    node[rectangle,draw] (karenm) at (-0.5, -1) {Karen Morris}
+                                   }
+                             child {
+                                    node[rectangle,draw] (susan) at (0.5, -1) {Susan Morris}
+                                   }
+                            }
+                      child {
+                             node[rectangle,draw] (evelyn) at (1, -1) {Evelyn Morris Veritzan}
+                             node[rectangle,draw] (robert) at (3, -1) {Robert Veritzan}
+                             node[coordinate] (centered5) at (2, -1) {}
+                             child {
+                                    node[rectangle,draw] (donaldv) at (0, -1) {Donald Veritzan}
+                                    node[rectangle,draw] (mary) at (-2, -1) {Mary Mollini Veritzan}
+                                   }
+                            }
+                      }
+                child {
+                      node[rectangle,draw] (vada) at (5, -1) {Vada Morris Rubb}
+                      node[rectangle,draw] (roy) at (7, -1) {Roy Rubb}
+                      node[coordinate] (centered3) at (6, -1) {}
+                      child {
+                             node[rectangle,draw] (donaldr) at (-1.5, -1) {Donald Rubb}
+                             node[rectangle,draw] (sally) at (-3.5, -1) {Sally Reynolds Rubb}
+                             node[coordinate] (centered6) at (-2.5, -1) {}
+                             child {
+                                 node[coordinate] (centered6b) at (0, 0) {}
+	                             child {
+	                                    node[rectangle,draw] (alan) at (-1.5, -0.25) {Alan Leroy Rubb}
+	                                   }
+	                             child {
+	                                    node[rectangle,draw] (mark) at (-0.5, -0.25) {Mark Patrick Rubb}
+	                                   }
+	                             child {
+	                                    node[rectangle,draw] (lisa) at (0.5, -0.25) {Lisa Ann Rubb}
+	                                   }
+	                             child {
+	                                    node[rectangle,draw] (kelly) at (1.5, -0.25) {Kelly Ann Rubb}
+	                                   }
+	                               }
+                            }
+                      child {
+                             node[rectangle,draw] (miriam) at (1.5, -1) {Miriam Rubb Rothhaupt}
+                             node[rectangle,draw] (andrew) at (3.5, -1) {Andrew Rothhaupt}
+                             node[coordinate] (centered7) at (2.5, -1) {}
+                             child {
+                                    node[rectangle,draw] (terry) at (-0.5, -1) {Terry Rothhaupt}
+                                   }
+                             child {
+                                    node[rectangle,draw] (alice-lynne) at (0.5, -1) {Alice-Lynne Rothhaupt}
+                                   }
+                            }
+                      }
+                child {
+                      node[rectangle,draw] (kenneth) at (11, -1) {Kenneth Morris}
+                      node[rectangle,draw] (alice) at (13, -1) {Alice Sisson Morris}
+                      node[coordinate] (centered8) at (12, -1) {}
+                      child {
+                             node[rectangle,draw] (petersr) at (1.5, -1) {Peter Morris}
+                             node[rectangle,draw] (drue) at (3.5, -1) {Drue Doll Morris}
+                             node[coordinate] (centered9) at (2.5, -1) {}
+                             child {
+                                    node[rectangle,draw] (peterjr) at (0, -1) {Peter Morris}
+                                   }
+                            }
+                      child {
+                             node[rectangle,draw] (Jeffrey) at (-1.5, -1) {Jeffrey Morris}
+                            }
+                      }
+                 }
+            }
+    }
+;
+% Mabel's parents
+\node[rectangle,draw] (charlesn) at (-12, -3) {Charles A. Norseen};
+\node[rectangle,draw] (sophie) at (-10, -3) {Sophie Frid Norseen};
+\node[coordinate] (charlessophiemabel) at (-11, -3) {}
+child {
+	node[rectangle,draw] (florence) at (-1, -1) {Florence Norseen}
+};
+\draw (charlessophiemabel) -- (mabel);
+
+% Birdella's sister's branch
+\node[rectangle,draw] (carrie) at (7, -4) {Carrie LaBonte Mather};
+\node[rectangle,draw] (raymond) at (9, -4) {Raymond Mather};
+\node[coordinate] (carrieraymond) at (8, -4) {}
+child {
+       node[rectangle,draw] (fred) at (-0.5, -0.5) {Fred Mather}
+      }
+child {
+       node[rectangle,draw] (effie) at (0.5, -0.5) {Effie Mather}
+      };
+\node[coordinate] (carriebirdella) at (6, -3) {};
+\draw (carriebirdella) -- (birdella);
+\draw (carriebirdella) -- (carrie);
+
+% Vandy's
+\node[rectangle,draw] (herman) at (-14, -7) {Herman Rolf Wucherp-finnig};
+\node[rectangle,draw] (christine) at (-12, -7) {Christine Elisabeth Lassen Weldon};
+\node[coordinate] (christineherman) at (-13, -7) {};
+\node[coordinate] (christineherman-1) at (-13, -8) {};
+
+\draw (christineherman) -- (christineherman-1);
+\draw (christineherman-1) -- (vandy);
+\draw (charles) -- (ann);
+\draw (herman) -- (christine);
+\draw (raymond) -- (carrie);
+\draw (hannah) -- (jacob);
+\draw (isaac) -- (birdella);
+\draw (mabel) -- (james);
+\draw (vandy) -- (jimmie);
+\draw (chester) -- (lizetta);
+\draw (vada) -- (roy);
+\draw (scott) -- (shari);
+\draw (roger) -- (ceil);
+\draw (evelyn) -- (robert);
+\draw (karenv) -- (sean);
+\draw (donaldv) -- (mary);
+\draw (donaldr) -- (sally);
+\draw (andrew) -- (miriam);
+\draw (kenneth) -- (alice);
+\draw (petersr) -- (drue);
+\draw (charlesn) -- (sophie);
+\end{tikzpicture}
+\end{landscape}
+
+\end{document}
