@@ -3,14 +3,34 @@
 \usepackage{float}
 \usepackage{graphicx}
 \usepackage[rightcaption]{sidecap}
+\usepackage{tikz}
+%\usetikzlibrary{graphs}
+\usetikzlibrary{graphdrawing}
+\usepackage{geometry}
+%\usegdlibrary{trees} % LATEX and plain TEX
 
+\tikzset{
+    every rectangle node/.style={
+        align=center,
+        text width=1.3cm,
+        font=\footnotesize
+    }
+}
+
+
+% Method for clearing to a left handed page, used for the f
+% family tree graphic: 
+\newcommand*\cleartoleftpage{%
+  \clearpage
+  \ifodd\value{page}\hbox{}\newpage\fi
+}
 
 %\usepackage{caption}
 %\captionsetup[figure]{labelformat=empty}
 
 % Use this word instead of "Figure" before a figure caption.
 \renewcommand{\figurename}{Clipping} 
-
+\sidecaptionvpos{figure}{c}
 %\usepackage{footnote}
 %\makesavenoteenv{tabular}
 %\makesavenoteenv{table}
@@ -37,7 +57,7 @@
 
 \title{\textsc{\Huge ``Family Portrait''}\\ The Autobiography of James Alfred Morris}    % Supply information
 \author{James Alfred Morris \andnext and Brett Michael Morris}              %   for the title page.
-\date{New York 1962-1966 \\and Seattle 2014}                           %   Use current date. 
+\date{New York 1962-1967 \\and Seattle 2014}                           %   Use current date. 
 % Note that book class by default is formatted to be printed back-to-back.
 \begin{document}                        % End of preamble, start of text.
 \frontmatter
@@ -52,7 +72,6 @@ In an attempt to remain true to the manuscripts, any editorial descriptions or d
 \maketitle                              % Print title page.
 \pagebreak
 \tableofcontents                        % Print table of contents
-
 
 \chapter{Index of Events}
 \begingroup
@@ -88,6 +107,7 @@ Passing of Birdella Morris & \pageref{ioe:deathmommorris} \\
 \end{tabular*}
 \end{table}
 
+
 \begin{table}[H]
 \centering
 \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
@@ -107,6 +127,227 @@ Passing of Chester Morris & \pageref{ioe:chesterdies} \\
 \end{tabular*}
 \end{table}
 \endgroup
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newgeometry{left=2cm,right=2cm}
+
+\tikzset{
+    every rectangle node/.style={
+        align=center,
+        text width=1.3cm,
+        font=\scriptsize%\footnotesize
+    }
+}
+%\cleartoleftpage
+\begingroup
+\renewcommand{\newpage}{}
+\chapter{Family Tree}
+\endgroup 
+\footnotetext{Only including persons mentioned in this autobiography and their spouses.}
+
+\begin{minipage}[H]{\textwidth}  
+\begin{tikzpicture}
+\node[rectangle,draw] (hannah) at (-1, 0) {Hannah Terry Morris};
+\node[rectangle,draw] (jacob) at (1, 0) {Jacob Morris};
+\node[coordinate] (centered-2) at (0, 0) {}
+child {
+    node[rectangle,draw] (charles) at (0, -1) {Charles S. Morris}
+    node[rectangle,draw] (ann) at (2, -1) {Ann Newman Morris}
+    node[coordinate] (centered-1) at (1, -1) {}
+    child {
+            node[rectangle,draw] (addie) at (-0.5, -1) {Addie Elizabeth Morris}
+          }
+    child {
+            node[rectangle,draw] (isaac) at (0.5, -1) {Isaac J. Morris}%; 
+            %node[rectangle,draw] (birdella) at (3, -1) {Birdella LaBonte Morris}%;
+            node[coordinate] (centered0a) at (2, -1) {}
+            child {
+                node[coordinate] (offset) at (0, -0.5) {}
+                child {
+                       node[rectangle,draw] (james) at (-10, -1) {James Alfred Morris}
+                       node[rectangle,draw] (mabel) at (-12, -1) {Mabel Norseen Morris}
+                       node[coordinate] (centered1) at (-11, -1) {}
+                       child { 
+                              node[rectangle,draw] (jimmie) at (0, -1) {James Alfred Morris, Jr.}
+                              node[rectangle,draw] (vandy) at (-2, -1) {Vandy Weldon Morris}
+                              node[coordinate] (centered2) at (-1, -1) {}
+                              child {
+                                     node[rectangle,draw] (karenv) at (-0.5, -1) {Karen Morris Von Braunsberg}
+                                     node[rectangle,draw] (sean) at (-2.5, -1) {Sean Von Braunsberg}
+                                    }
+                              child {
+                                     node[rectangle,draw] (scott) at (0.5, -1) {Scott Weldon Morris}
+                                     node[rectangle,draw] (shari) at (2.5, -1) {Shari Stark Morris}
+                                    }
+                             }
+                       }
+                child {
+                      node[rectangle,draw] (chester) at (-3.5, -1) {Chester DeVere Morris}
+                      node[rectangle,draw] (lizetta) at (-5.5, -1) {Lizetta Letts Morris}
+                      node[coordinate] (centered3) at (-4.5, -1) {}
+                      child {
+                             node[rectangle,draw] (roger) at (-1, -1) {Roger Morris}
+                             node[rectangle,draw] (ceil) at (-3, -1) {Ceil Weisse Morris}
+                             node[coordinate] (centered4) at (-2, -1) {}
+                             child {
+                                    node[rectangle,draw] (karenm) at (-0.5, -1) {Karen Morris}
+                                   }
+                             child {
+                                    node[rectangle,draw] (susan) at (0.5, -1) {Susan Morris}
+                                   }
+                            }
+                      child {
+                             node[rectangle,draw] (evelyn) at (1, -1) {Evelyn Morris Veritzan}
+                             node[rectangle,draw] (robert) at (3, -1) {Robert Veritzan}
+                             node[coordinate] (centered5) at (2, -1) {}
+                             child {
+                                    node[rectangle,draw] (donaldv) at (0, -1) {Donald Veritzan}
+                                    node[rectangle,draw] (mary) at (-2, -1) {Mary Mollini Veritzan}
+                                   }
+                            }
+                      }
+                 }
+            }
+    }
+;
+% Mabel's parents
+\node[rectangle,draw] (charlesn) at (-12, -3) {Charles A. Norseen};
+\node[rectangle,draw] (sophie) at (-10, -3) {Sophie Frid Norseen};
+\node[coordinate] (charlessophiemabel) at (-11, -3) {}
+child {
+	node[rectangle,draw] (florence) at (-1, -1) {Florence Norseen}
+};
+\draw (charlessophiemabel) -- (mabel);
+
+% Vandy's
+\node[rectangle,draw] (herman) at (-13, -7) {Herman Rolf Wucherp-finnig};
+\node[rectangle,draw] (christine) at (-11, -7) {Christine Elisabeth Lassen Weldon};
+\node[coordinate] (christineherman) at (-12, -7) {};
+\node[coordinate] (christineherman-1) at (-12, -8) {};
+
+\node[coordinate] (tobirdella) at (4.5, -4) {};
+\draw (isaac) -- (tobirdella);
+
+
+
+\draw (christineherman) -- (christineherman-1);
+\draw (christineherman-1) -- (vandy);
+\draw (charles) -- (ann);
+\draw (herman) -- (christine);
+\draw (hannah) -- (jacob);
+\draw (mabel) -- (james);
+\draw (vandy) -- (jimmie);
+\draw (chester) -- (lizetta);
+\draw (scott) -- (shari);
+\draw (roger) -- (ceil);
+\draw (evelyn) -- (robert);
+\draw (karenv) -- (sean);
+\draw (donaldv) -- (mary);
+\draw (charlesn) -- (sophie);
+\end{tikzpicture}
+\end{minipage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagebreak
+
+%\vspace*{2.85cm}
+\vspace*{8cm}
+
+\begin{minipage}[H]{\textwidth}  
+\begin{tikzpicture}
+\node[rectangle,draw] (birdella) at (3, -4) {Birdella LaBonte Morris};
+\node[coordinate] (centered0a) at (2, -4) {}
+child {
+node[coordinate] (offset) at (0, -0.5) {}
+child {
+      node[rectangle,draw] (vada) at (5, -1) {Vada Morris Rubb}
+      node[rectangle,draw] (roy) at (7, -1) {Roy Rubb}
+      node[coordinate] (centered3) at (6, -1) {}
+      child {
+             node[rectangle,draw] (donaldr) at (-1.5, -1) {Donald Rubb}
+             node[rectangle,draw] (sally) at (-3.5, -1) {Sally Reynolds Rubb}
+             node[coordinate] (centered6) at (-2.5, -1) {}
+             child {
+                 node[coordinate] (centered6b) at (0, 0) {}
+             child {
+                    node[rectangle,draw] (alan) at (-1.5, -0.25) {Alan Leroy Rubb}
+                   }
+             child {
+                    node[rectangle,draw] (mark) at (-0.5, -0.25) {Mark Patrick Rubb}
+                   }
+             child {
+                    node[rectangle,draw] (lisa) at (0.5, -0.25) {Lisa Ann Rubb}
+                   }
+             child {
+                    node[rectangle,draw] (kelly) at (1.5, -0.25) {Kelly Ann Rubb}
+                   }
+               }
+            }
+      child {
+             node[rectangle,draw] (miriam) at (1.5, -1) {Miriam Rubb Rothhaupt}
+             node[rectangle,draw] (andrew) at (3.5, -1) {Andrew Rothhaupt}
+             node[coordinate] (centered7) at (2.5, -1) {}
+             child {
+                    node[rectangle,draw] (terry) at (-0.5, -1) {Terry Rothhaupt}
+                   }
+             child {
+                    node[rectangle,draw] (alice-lynne) at (0.5, -1) {Alice-Lynne Rothhaupt}
+                   }
+            }
+      }
+child {
+      node[rectangle,draw] (kenneth) at (11, -1) {Kenneth Morris}
+      node[rectangle,draw] (alice) at (13, -1) {Alice Sisson Morris}
+      node[coordinate] (centered8) at (12, -1) {}
+      child {
+             node[rectangle,draw] (petersr) at (1.5, -1) {Peter Morris}
+             node[rectangle,draw] (drue) at (3.5, -1) {Drue Doll Morris}
+             node[coordinate] (centered9) at (2.5, -1) {}
+             child {
+                    node[rectangle,draw] (peterjr) at (0, -1) {Peter Morris}
+                   }
+            }
+      child {
+             node[rectangle,draw] (Jeffrey) at (-1.5, -1) {Jeffrey Morris}
+            }
+      }
+ }
+;
+
+% Birdella's sister's branch
+\node[rectangle,draw] (carrie) at (7, -4) {Carrie LaBonte Mather};
+\node[rectangle,draw] (raymond) at (9, -4) {Raymond Mather};
+\node[coordinate] (carrieraymond) at (8, -4) {}
+child {
+       node[rectangle,draw] (fred) at (-0.5, -0.75) {Fred Mather}
+      }
+child {
+       node[rectangle,draw] (effie) at (0.5, -0.75) {Effie Mather}
+      };
+\node[coordinate] (carriebirdella) at (5, -3) {};
+\draw (carriebirdella) -- (birdella);
+\draw (carriebirdella) -- (carrie);
+
+\node[coordinate] (toisaac) at (1, -4) {};
+\draw (toisaac) -- (birdella);
+
+
+\draw (raymond) -- (carrie);
+\draw (vada) -- (roy);
+\draw (donaldr) -- (sally);
+\draw (andrew) -- (miriam);
+\draw (kenneth) -- (alice);
+\draw (petersr) -- (drue);
+\end{tikzpicture}
+\end{minipage}
+\restoregeometry
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \mainmatter                             % only in book class (arabic page #s)
 %\part{A Part Heading}                   % Print a "part" heading
@@ -169,7 +410,7 @@ Pop was an apprentice machinist in the railroad shops at Albany or Rensselaer wh
 
 It was a monotonous treadmill of work with little time left for anything else and with no future. Pop was handicapped by lack of formal education. He had not completed grammar school but was an excellent mechanic and of an inventive turn of mind. He sought to lift himself through inventions and by going into business for himself. He was not successful in either direction. 
 
-At one time he felt there was a market for a convenient hand washing compound. From his daily experience he knew the difficulty of washing grease and grime from his hands at the end of a day's work. His idea was a compressed washing powder about the diameter of a quarter and a quarter inch thick, packed in rolls like the old candy \href{http://en.wikipedia.org/wiki/Necco_Wafers}{Necco Wavers}. Held in the palms of the hands under the water tap it would dissolve and with a little rubbing remove the grease. He advertised for shop workers with little success. [Illegible] Later the big soap companies introduced hand washing compounds in paste form which met with the success that Pop had so much sought. 
+At one time he felt there was a market for a convenient hand washing compound. From his daily experience he knew the difficulty of washing grease and grime from his hands at the end of a day's work. His idea was a compressed washing powder about the diameter of a quarter and a quarter inch thick, packed in rolls like the old candy \href{http://en.wikipedia.org/wiki/Necco_Wafers}{Necco Wafers}. Held in the palms of the hands under the water tap it would dissolve and with a little rubbing remove the grease. He advertised for shop workers with little success. [Illegible] Later the big soap companies introduced hand washing compounds in paste form which met with the success that Pop had so much sought. 
 
 Another of his many inventions was a collapsible wooden crate for packing onions and other vegetables -- that could be returned to the farmer or produce dealer and reused. He patented the idea, incorporated a company under the name \textit{American Crate Company} and sold stock to his friends. Then the promoter sold Pop on the idea that he could sell the crate to the onion growers of Texas and departed with the remaining cash. Years later he sent shares of stock in an oil exploration company to Pop and to the stockholders of the Crate Company. They turned out to be as worthless as the crate company stock and ended another dream for Pop. 
 
@@ -177,7 +418,7 @@ We can return to our early days in Morris Park with Pop's venture in the retail 
 
 A very short time later, Pop arranged to have a new store built on the lot immediately adjoining the little store. The structure was built on the entire width of the lot. It had a built-in driveway to a stable in the rear of the house. The store and rear storeroom took up the remainder of the first level. From the storeroom a staircase led to a very nice apartment above. Pop continued in business here for a few years until his leniency on credit brought the business toppling down.
 
-An old oder book (I don't know if it was for delivery from the little store or from the new one) discloses some rather startling prices when compared with those today. Here are a few examples: 
+An old order book (I don't know if it was for delivery from the little store or from the new one) discloses some rather startling prices when compared with those today. Here are a few examples: 
 
 \begin{table}[H]
 \centering
@@ -207,7 +448,7 @@ I learned, however, through a different kind of incident that there are other ki
 
 Our new home was lighted with gas continuously by ``pay-as-you-go'' meters. One Sunday evening the lights went out and Pop asked me to go to the cellar and drop a quarter in the meter. To do so I had to go downstairs, through the dark store room and on down to the even darker cellar. I was searching for the slot in the meter when something scrambled away. I ran upstairs screaming and Pop went down and discovered a cat in the cellar. That was another experience that made me afraid of the dark.
 
-Mom was deeply religious and her training was reflected in our early formation of character. All of her social contracts were made at the First Methodist Episcopal Church of Morris Park and her children were drawn into the circle. On Sundays we attended the morning services with her. We could be found at Sunday school in the afternoon and after supper at the evening service with Mom. I can still recall sitting beside Mom and singing such hymns as \textit{Jesus Lover of My Soul}, \href{http://en.wikipedia.org/wiki/Lead,_Kindly_Light}{\textit{Lead Kindly Light}} and \href{http://en.wikipedia.org/wiki/Rock_of_Ages_(Christian_hymn)}{\textit{Rock of Ages}}. When we were a little older we joined the Epworth League and attended those meetings just before the evening service. Sunday was indeed a crowded day. 
+Mom was deeply religious and her training was reflected in our early formation of character. All of her social contacts were made at the First Methodist Episcopal Church of Morris Park and her children were drawn into the circle. On Sundays we attended the morning services with her. We could be found at Sunday school in the afternoon and after supper at the evening service with Mom. I can still recall sitting beside Mom and singing such hymns as \textit{Jesus Lover of My Soul}, \href{http://en.wikipedia.org/wiki/Lead,_Kindly_Light}{\textit{Lead Kindly Light}} and \href{http://en.wikipedia.org/wiki/Rock_of_Ages_(Christian_hymn)}{\textit{Rock of Ages}}. When we were a little older we joined the Epworth League and attended those meetings just before the evening service. Sunday was indeed a crowded day. 
 
 Wednesday was also a special day for Mom. On that evening she went to prayer meeting with a close friend and neighbor, Mrs. Bradford Wicks. Pop rarely attended any of the church services. 
 
@@ -215,7 +456,7 @@ Mom did not believe in any frivolity on Sundays. She would not let us play ``cat
 
 The Methodists were really strict in those days. Each service was an evangelistic meeting in itself with much talk of hell and brimstone. Dancing was frowned upon and drink was a curse. Mom would get real excited when a Catholic neighbor would pass the house with a tin pail on the way to a nearby saloon for a pint of beer. This was called ``rushing the growler'' and the tin pails were large enough to hold far more than a pint. She could not understand either why the Catholics would permit ball playing on Sundays or hold picnics or other festive affairs. 
 
-With no movies, radio, television or automobiles, the church -- no matter what the denomination -- was the social center of the community. Apart from religious services, in the summer there were strawberry festivals on the lawns of the church or private homes, trolley rides to Coney Island and picnics. In the winter there were straw rides in horse drawn sleighs or wagons, or house parties of the various societies.For the children there were two big events. One was the Anniversary Day Parade in early June with ice cream and cake awaiting them in the church basement at the end of the march. With bands playing such tunes as \href{http://en.wikipedia.org/wiki/Onward,_Christian_Soldiers}{\textit{Onward Christian Soldiers}} and with the children decked out in their best clothes carrying banners and American flags, it really was a gala event. 
+With no movies, radio, television or automobiles, the church -- no matter what the denomination -- was the social center of the community. Apart from religious services, in the summer there were strawberry festivals on the lawns of the church or private homes, trolley rides to Coney Island and picnics. In the winter there were straw rides in horse drawn sleighs or wagons, or house parties of the various societies. For the children there were two big events. One was the Anniversary Day Parade in early June with ice cream and cake awaiting them in the church basement at the end of the march. With bands playing such tunes as \href{http://en.wikipedia.org/wiki/Onward,_Christian_Soldiers}{\textit{Onward Christian Soldiers}} and with the children decked out in their best clothes carrying banners and American flags, it really was a gala event. 
 
 The other big event for children was the Christmas party a few days after Christmas. Following the entertainment, Santa Claus handed boxes of candy and oranges to the children. Sometimes there would be presents from the teachers. One of the then popular G.A.~Henty books, dated December 25, 1902, in my library was a present from my Sunday School teacher, Skidmore Pettit, Jr. 
 
@@ -225,7 +466,7 @@ The same Christmas I received the Henty book, I was presented with a small volum
 
 In the eyes of a nine year old boy, Dr.~Caswell was an old man, but he was probably 35 or 40 years of age at that time. Like his first name, he was a kindly gentleman with a ready smile and made all feel at home. The Sunday School Superintendent, Mr.~Van Horn, also led the singing. His leather-lunged voice is etched in my memory. It literally rattled the rafters and was infectious in its demands on our own vocal chords. He certainly was a top-notch song leader and a fine Christian. 
 
-The preached succeeding Dr.~Caswell as a Dr.~Chadwick, a large, raw-boned elderly man with thick grey hair and bushy sideburns. He hammered home the gospel in a resounding voice. More than any other I have heard, he typified the old-time methodist preacher who believed and preached eternal damnation for the sinner. There were other ministers that followed but non like him. One, in particular, when I was a young man really shook my faith. He deserted his wife and ran away with the voluptuous vocalist of the choir -- the wife of the master of my masonic lodge. It was some time before I returned to the church after that incident. 
+The preacher succeeding Dr.~Caswell was a Dr.~Chadwick, a large, raw-boned elderly man with thick grey hair and bushy sideburns. He hammered home the gospel in a resounding voice. More than any other I have heard, he typified the old-time methodist preacher who believed and preached eternal damnation for the sinner. There were other ministers that followed but none like him. One, in particular, when I was a young man really shook my faith. He deserted his wife and ran away with the voluptuous vocalist of the choir -- the wife of the master of my masonic lodge. It was some time before I returned to the church after that incident. 
 
 Aside from my mother and father, the person whose teachings did most in moulding our moral and religious concepts was our Sunday School teacher for many years, Skidmore Pettit Jr. He started a class of eight to ten year old boys and continued with the group until we were well into manhood. Chester and I were members from the beginning. By words and deeds he instilled in us the urge to be manly, clean and honest. To better hold us together he formed a social club, the C.I.O.C. (Christ Is Our Captain) which alternated in meeting at the homes of the boys. We wore pins inscribed with the letters of the club and were proud to be members of the class and the club. At one time I was president of the club. But this activity, like so many others in life, was not without its tragedy. 
 
@@ -234,7 +475,7 @@ Unfortunately, Mr.~Pettit's teachings evidently did not penetrate the understand
 \begin{center}
 ------------------------------------------------------
 \end{center}
-In penning a story of this type, one's thoughts come more quickly than they can be spelled out and account somewhat for apparent digressions. But the object is to present a background to help bring statistics to life. And in order to do so we have to tell something about my youth, business life, courtship and marriage to Mabel, my son, Jim, his wife, Vandy, and our two grandchildren, Scott \& Karen. Then there are my brothers and sister, etc -- and there is more to tell about the early days of the family in Morris Park. 
+In penning a story of this type, one's thoughts come more quickly than they can be spelled out and account somewhat for apparent digressions. But the object is to present a background to help bring statistics to life. And in order to do so we have to tell something about my youth, business life, courtship and marriage to Mabel, my son, Jim, his wife, Vandy, and our two grandchildren, Scott \& Karen. Then there are my brothers and sister, etc.~ -- and there is more to tell about the early days of the family in Morris Park. 
 \begin{center}
 ------------------------------------------------------
 \end{center}
@@ -265,7 +506,7 @@ I can recall also on each of Pop's pay days taking the mortgage payment book wit
 
 Down the avenue in the old flat building, our first home in Morris Park, the ground floor corner apartment had been converted into a grocery store owned by Henry Voige, a German. Across the avenue on the opposite corner was Dusenberg's candy store where for a penny we could buy a bag full of candy. I can't say it was very wholesome, but what it lacked in quality it made up in quantity. When I was about 12 or 13 years of age I started working on Saturdays at Voige's store.
 
-The Saturday workday was from eight in the morning until eight or nine at night for the magnificent sum of 50$\cent$. And it was hard work delivering big boxes of groceries and bushels of coal also. Many people with only kitchen ranges for heat would buy coal by the bushel in those days. The coal would be dumped in a box behind the range. At the end of the day I would be very tired. I remember one particularly heavy day when I walked home sobbing from exhaustion. I had the feeling that the job was worth more than 50$\cent$. I put the problem to Mr.~Voice, but when he told me that he could get other boys to work for that money, and I didn't have to work for him if I didn't want to, I told him I would be glad to continue as I liked the job. Later, I did get a raise. 
+The Saturday workday was from eight in the morning until eight or nine at night for the magnificent sum of 50$\cent$. And it was hard work delivering big boxes of groceries and bushels of coal also. Many people with only kitchen ranges for heat would buy coal by the bushel in those days. The coal would be dumped in a box behind the range. At the end of the day I would be very tired. I remember one particularly heavy day when I walked home sobbing from exhaustion. I had the feeling that the job was worth more than 50$\cent$. I put the problem to Mr.~Voige, but when he told me that he could get other boys to work for that money, and I didn't have to work for him if I didn't want to, I told him I would be glad to continue as I liked the job. Later, I did get a raise. 
 
 During school vacation the work was not quite so hard but in some respects not to my liking. In the mornings, I would clean the stable and hitch the horse. To a person who has never cleaned a stable by sifting the dirty straw bedding of fresh manure and then raking the straw into a heap for the night's spreading, the experience would be revealing. All that is needed is a pitch fork, a rake and a long-handled shovel, as well as a clothes pin for the nose. The long-handled shovel is needed to scrape up the residue from the sifting, fill it with the stuff and carry it to the manure heap in the yard. One must be sure when leaving the stable to scrape the bottom of the shoes with the sharp end of the shovel. Otherwise the store and the home might capture some of the delightful aroma of the stable. 
 
@@ -279,11 +520,11 @@ After dark on election night they were taken to some open lot and pyramided as h
 
 Halloween was another day when the boys stepped a little out of line. For reasons which I cannot understand, the prevailing practice among the kids was to fill the feet of their old long cotton stockings with flour and sock anyone within range of the swinging ``fun-maker.'' As soon as we left school, we would turn our coats inside-out, get our flour filled stockings and star swinging. If one's clothing was not completely white at the end of the day, we were not having fun. Some of the tough kids would be somewhat vicious by using lime or dirt in the stockings and take delight in the punishing blows they could administer. On Halloween evenings everything portable had to be securely anchored. Otherwise the boys would steal gates off fences or take anything moveable and leave them in some neighbor's yard perhaps a quarter mile away. I was unfortunate one night when our crowd started to pull a hearse across the fields and onto a road. I was the one caught. The masked ragamuffin outfits and begging at doors was reserved for Thanksgiving day. That was the day the younger children had their fun.
 
-Such pranks are worth telling if only to show that, even if practice differs, the kids of yesterday are no different than the kids of today. However juvenile delinquency as such is infrequent or at least the expression was seldom used. We were either good boys or bad boys and their seemed to be more good ones than bad ones. In my opinion, this less pronounced delinquency problem was due to more closely-knit family life and more strict parental discipline, closer church ties, tougher police (they used to carry night sticks), and plenty of open spaces for play.
+Such pranks are worth telling if only to show that, even if practice differs, the kids of yesterday are no different than the kids of today. However juvenile delinquency as such was infrequent or at least the expression was seldom used. We were either good boys or bad boys and their seemed to be more good ones than bad ones. In my opinion, this less pronounced delinquency problem was due to more closely-knit family life and more strict parental discipline, closer church ties, tougher police (they used to carry night sticks), and plenty of open spaces for play.
 
 In our area there was ample room for baseball, tennis, and all outdoor sports. There were nearby hills for coasting and tobogganing and ponds for fishing and skating. The growth of population in urban and suburban communities eliminated our playing room and gave rise to gang growth. These groups of boys drawn together by boredom seek an outlet through bullying and crime -- a condition fostered and strengthened in part by the horror of three wars, the portrayal of crime through movies and television, and the decline of the church as a social center of community. 
 
-In our late teens, for example, a group of about eight of us received permission to build two tennis courts on Belmont Avenue. We scraped and rolled the courts, built a wire enclosure, erected a judges stand and player benches and then spent our idle time in strenuous play. I was elected the first president of the Belmont Tennis Club which was in existence for about four years. 
+In our late teens, for example, a group of about eight of us received permission to build two tennis courts on Belmont Avenue. We scraped and rolled the courts, built a wire enclosure, erected a judge's stand and player benches and then spent our idle time in strenuous play. I was elected the first president of the Belmont Tennis Club which was in existence for about four years. 
 
 There are many memories of early childhood the recital of which would leave little time and space for the interesting parts of our later family portrait.
 
@@ -312,15 +553,15 @@ The usual meeting place for the boys was at the home of the Aston's on Oak Stree
 
 Like all boys, we had our ``bull--sessions'' with serious discussions on topics of the day but particularly on our plans for our future in business. My own ambition was to get into the advertising business. If we had recordings of those discussions they would be mighty interesting to hear today, although I venture to say they would differ little from those carried on currently by present-day youth.
 
-The big mixed social events of our time were house parties with the boys and their girl friends again around a piano or dancing or playing various parlor games -- spin the plate, musical chairs, etc. Then sandwiches, ice cream, cake and coffee and the walk home with the girl friend of the evening. She lived considerable distance from my house, the return from her house to my house through the quiet streets was a lonely one. This was particularly so if the route took me near an isolated wooded area. Then anyone within hailing distance could hear me whistling to keep up my courage. 
+The big mixed social events of our time were house parties with the boys and their girl friends again around a piano or dancing or playing various parlor games -- spin the plate, musical chairs, etc. Then sandwiches, ice cream, cake and coffee and the walk home with the girl friend of the evening. If she lived considerable distance from my house, the return from her house to my house through the quiet streets was a lonely one. This was particularly so if the route took me near an isolated wooded area. Then anyone within hailing distance could hear me whistling to keep up my courage. 
 
 It was a lot of fun, also, rehearsing and presenting minstrel shows at the old Arcanum Hall on Jamaica Avenue or the Temple Forum (built much later) on Johnson Ave. This yearly event was a big one which helped us to raise funds through our Knights of King Arthur society (KOKA) for the church.
 
 To the teenager of today, all of this may seem tame. However, one must realize that we had to make our own fun, which we did and had a wonderful time doing so. Radio was not in general use, movies were just being introduced and television was still a long way in the future. The few automobiles were only for the wealthy and not dependable at that.
 
-Outdoor sports were no different than today. We had our baseball team, the Mohawks with a field in Glen Morris, and as mentioned earlier, our tennis club and courts. It may seem odd but those two sports in which skill depended upon speed an keeping your eyes on the ball taught me a lesson which I have never forgotten and was a stimulating force in m business efforts. Years later when I was working desperately in a large corporation to overcome my lack of academic education in competition with college men, I would continually strive to keep my eyes on the ``ball''. In my dreams at night I would hear the impact of the bat on the ball and see the ball soaring into the outfield. I would awaken with the conviction that I could and must keep my eyes on the objectives of the job in hand and really it them hard. By doing that I would have no fear of competition. 
+Outdoor sports were no different than today. We had our baseball team, the Mohawks with a field in Glen Morris, and as mentioned earlier, our tennis club and courts. It may seem odd but those two sports in which skill depended upon speed and keeping your eyes on the ball taught me a lesson which I have never forgotten and was a stimulating force in my business efforts. Years later when I was working desperately in a large corporation to overcome my lack of academic education in competition with college men, I would continually strive to keep my eyes on the ``ball''. In my dreams at night I would hear the impact of the bat on the ball and see the ball soaring into the outfield. I would awaken with the conviction that I could and must keep my eyes on the objectives of the job in hand and really hit them hard. By doing that I would have no fear of competition. 
 
-Occasionally Wad smith would bring his baseball team from Brooklyn to play our team. He and I also played a lot of tennis -- a game we played together well into middle life. His father had purchased a small summer bungalow in a new development in Allendale, Staten Island. The developers had built a community club house and a couple of tennis courts. Here we played literally from dawn to dusk on those weekends I was the guest of Wad.
+Occasionally Wad Smith would bring his baseball team from Brooklyn to play our team. He and I also played a lot of tennis -- a game we played together well into middle life. His father had purchased a small summer bungalow in a new development in Allendale, Staten Island. The developers had built a community club house and a couple of tennis courts. Here we played literally from dawn to dusk on those weekends I was the guest of Wad.
 
 For a couple of weeks one summer, Chester and I and six or seven of the Richmond Hill boys pitched a camp in the woods on the west shore of \href{http://en.wikipedia.org/wiki/Lake_Ronkonkoma_(lake)}{Lake Ronkonkoma}. At that time, Ronkonkoma was very sparsely settled and the lake little used by tourists. It was very picturesque and if a dozen persons were seen on the beach near Hoyt's dock we would have considered it crowded. Another year I spent a vacation of a week or so at Camp Wopowog in \href{http://en.wikipedia.org/wiki/Hampton,_Connecticut}{Hampton, Connecticut}. With Wad's crowd I also roughed it for a short time at a cabin on \href{http://en.wikipedia.org/wiki/Cedar_Lake,_New_Jersey}{Cedar Lake} near \href{http://en.wikipedia.org/wiki/Denville_Township,_New_Jersey}{Denville, New Jersey}. The cabin was loaned to us by the father of one of Wad's friends. 
 
@@ -346,11 +587,11 @@ Here I was in my second unplanned job and one quite different than the first. Ne
 
 Walter W.~DeBevoise was the sole owner of the business and a very sharp operator. A calm, dignified man of about 50 with graying black hair, he evoked the like of a \href{http://en.wikipedia.org/wiki/Parson}{parson} rather than a successful business man. Two relatives worked with him. Gus, a brother, was superintendent and Clarence, a nephew, his assistant. Gus was gruff and could be very tough with the workers. Clarence, on the other hand, was talkative, witty and popular with his associates. Harry Elsebough, my immediate boss, who faced me across that long desk was a tall handsome man with a bushy brown mustache. He had a greater tendency to tell stories and play practical jokes than to get down to business. All-in-all it was a pleasant place to work despite the long ours and hard work.
 
-The work day started at 8 am and ended at 5:30 pm. Saturday was ``half-day'' from 8 to 3:30. My duties, as outlined on that morning of September 16, 1912, were to dust the office furniture with one of those long feather dusters, open the safe and place the ledgers on the long shelf above our desk and then start posting the journal entry of the previous day's deliveries. I was also to help the girl type the billings. As it developed, however, in the day-to-day activities, I would do as Harry and the boss would do, that is pitch in on any job in the factory that required help, particularly in the shipping room tying boxes and helping load the trucks. 
+The work day started at 8 am and ended at 5:30 pm. Saturday was ``half-day'' from 8 am to 3:30 pm. My duties, as outlined on that morning of September 16, 1912, were to dust the office furniture with one of those long feather dusters, open the safe and place the ledgers on the long shelf above our desk and then start posting the journal entry of the previous day's deliveries. I was also to help the girl type the billings. As it developed, however, in the day-to-day activities, I would do as Harry and the boss would do, that is pitch in on any job in the factory that required help, particularly in the shipping room tying boxes and helping load the trucks. 
 
 The boss would arrive at the factory at about 8:15 am. He would first open the mail piled on his desk being very careful to cut the envelopes cleanly. He would pile the clean sides of the envelopes on his desk for scratch paper. Then with a few of these and a stub of a pencil he would tour the plant. When he returned he had the ``cost accounting'' data noted on the clean underside of the clipped envelopes. This data included the number of points of material in each batch of candy, the number of people on each operation, the time required to complete the jobs and all other facts gathered at first hand that would help him in estimating costs. He did not have to refer to invoices for the costs of materials. He knew just what they were. Despite this apparently inefficient method, the business prospered in those early years.
 
-DeBevoise specialized in penny candies, the kind I used to buy in Dusenberg's store when I was a kid and were very popular because you got a lot for the money. Big pieces of chocolate-covered marshmallow, colored coconut-covered marshmallow bars, chocolate covered marshmallow pretzels, drops and the leader, Uncle Same Bars, made of ground peanuts and cheap chocolate. These bars were about the size of 5$\cent$ bars today. Then there were such novelties as Fried Eggs, little tin saucepans filled with white cream and topped with a piece of pink cream to resemble the yolk. A little tin spoon went with this ``work of art'' and the kid got it all for a penny. DeBevoise bulk candies included jelly beans, coconut bon-bons, chocolate cream drops, and the real treat of them all, hand-dipped chocolate almonds.
+DeBevoise specialized in penny candies, the kind I used to buy in Dusenberg's store when I was a kid and were very popular because you got a lot for the money. Big pieces of chocolate-covered marshmallow, colored coconut-covered marshmallow bars, chocolate covered marshmallow pretzels, drops and the leader, Uncle Sam Bars, made of ground peanuts and cheap chocolate. These bars were about the size of 5$\cent$ bars today. Then there were such novelties as Fried Eggs, little tin saucepans filled with white cream and topped with a piece of pink cream to resemble the yolk. A little tin spoon went with this ``work of art'' and the kid got it all for a penny. DeBevoise bulk candies included jelly beans, coconut bon-bons, chocolate cream drops, and the real treat of them all, hand-dipped chocolate almonds.
 
 The candy was sold to jobbers who in turn sold to the little retail stores. There were many of these little stores. What few chain food stores in existence at that time did not sell candy and few of the chain tobacco shops did. The ice cream and confectionary stores to a large extent handled packaged and bulk candies. In retrospect, one wonders how the small candy stores catering to children met their expenses. For example, DeBevoise's Uncle Sam Bars sold to the jobber in boxes of 48 pieces for 35$\cent$. He would sell it for 38 or 40$\cent$ to the retailer who would have to make 48 separate sales for a return of 8 or 10$\cent$. A little greater return was possible for both the jobber and retailer with other candies packed 72 or 100 in boxes selling for 40 and 50$\cent$ to the jobber. In light of the narrow margin of profit in the candy business, maybe my starting salary of ten dollars a week was not so small after all.
 
@@ -360,7 +601,7 @@ Most of the girls worked in heavy sweaters in the refrigerator rooms packing cho
 
 In addition there were separate departments for the manufacture of chocolate, coconut goods, and for ``panned goods'' such as jelly beans and jawbreakers which were coated and polished in large revolving kettles. 
 
-During the early period of my associate with DeBevoise, sanitary and working conditions were not what they are today. Food factories were far from clean, and pure food laws either non-existent or not enforced. Highly flavored and dark colored candies covered a multitude of sanitary and production sins. Working conditions were equally bad. Management was int he saddle and rode hard on labor. One example in our plant can be cited. Two men feeding an enrober quarreled and slowed down the line. In a matter of seconds, the superintendent and the foreman manhandled these workers and had them back on the line without another murmur.
+During the early period of my associate with DeBevoise, sanitary and working conditions were not what they are today. Food factories were far from clean, and pure food laws were either non-existent or not enforced. Highly flavored and dark colored candies covered a multitude of sanitary and production sins. Working conditions were equally bad. Management was in the saddle and rode hard on labor. One example in our plant can be cited. Two men feeding an enrober quarreled and slowed down the line. In a matter of seconds, the superintendent and the foreman manhandled these workers and had them back on the line without another murmur.
 
 Twenty years later the pendulum had swung widely in the other direction. Labor was organized and began its usurpation of power at the expense of management and the progress of industry. At this writing, labor is still in the ascendency and management greatly handicapped in efficient operations. For the future of industry and the economic progress of America, it is my hope that an equitable balance between management and labor can be reached. 
 
@@ -395,7 +636,7 @@ My duties were entirely clerical. The uniform and the discipline were the only t
 
 In January 1918, I learned that examinations shortly would be held for a paymaster training course at the \href{http://en.wikipedia.org/wiki/United_States_Naval_Academy}{Naval Academy in Annapolis, Maryland} starting on August 1. This seemed to offer a real opportunity to get away from New York and perhaps get a commission and an assignment to sea duty. With the recommendation of my commanding officer and letters from DeBevoise, United States Title and the principal of Commercial High, I applied for permission to take the examination. Permission was granted and I took and passed the examination.
 
-\custompagelabel{ioe:princeton} Much to my disappointment, I was not included in the Annapolis group. I did so much want the opportunity to take training in that historic academy. But my disappointment was tempered with the announcement a short time later that another training course, United States Navy Officer Material School for the Pay Corps, was to be established at Princeton University and that I would be included. Now I was happy. I was about the remove what I thought was the stigma of desk duty in the City and, at the same time had proven to myself that I could compete successfully in an effort to improve my status. It was the first real test of competitive competence outside of school and sports. My folks were proud. And I hoped a certain charming young lady I had met a short time before shared that pride. 
+\custompagelabel{ioe:princeton} Much to my disappointment, I was not included in the Annapolis group. I did so much want the opportunity to take training in that historic academy. But my disappointment was tempered with the announcement a short time later that another training course, United States Navy Officer Material School for the Pay Corps, was to be established at Princeton University and that I would be included. Now I was happy. I was about the remove what I thought was the stigma of desk duty in the city, and at the same time had proven to myself that I could compete successfully in an effort to improve my status. It was the first real test of competitive competence outside of school and sports. My folks were proud. And I hoped a certain charming young lady I had met a short time before shared that pride. 
 
 In the spring on 1918, Art Wenige and I dropped in at a dance for servicemen (Art was an Army trainee at \href{http://en.wikipedia.org/wiki/Camp_Upton}{Camp Upton}) given by the USO in Brooklyn. There Art met a young lady in a Red Cross Nurse's uniform. When Art suggested a date, she agreed on the condition that a friend of hers come along if I would care to make it a double date. I agreed but wondered who was being imposed on me as I had had some experience on double dates and never seemed to pick a winner. 
 
@@ -405,7 +646,7 @@ I wondered what she thought about me, whether she felt that I was the ``boy of h
 
 Along with 100 or more hopefuls (perhaps 200), I reported to the Naval officer in charge of training at Princeton early in September 1918. We were billeted in beautiful Graduate College at the far end of the Princeton campus and I was thrilled with the place. At long last I was at ``college'' or at least in the environment of a college. I was billeted with three other ``M's'' -- Murdock, Moses and Morrisey -- in a room in the graduate building. It was an oddly assorted group. Murdock was a Harvard man, later to become a professor there; Morrisey, a tough little Irishman from New York City; and Moses, a quiet spoken boy of Jewish descent and also from the City. 
 
-The training was not too difficult. It consisted of lectures on navigation and on subjects concerned with naval regulations and paymaster's duties with on period a day devoted to actual military training on the parade grounds. I cannot understand why we took such military training when our jobs were to be on paper work. It must have been for the discipline factors. 
+The training was not too difficult. It consisted of lectures on navigation and on subjects concerned with naval regulations and paymaster's duties with a period of the day devoted to actual military training on the parade grounds. I cannot understand why we took such military training when our jobs were to be on paper work. It must have been for the discipline factors. 
 
 I so much wanted Mabel to come to Princeton for a weekend so I could show her the University and how we lived and studied at the College. But most of all I wanted to see her. We were corresponding regularly and had made tentative arrangements for her visit. However, her parents were very strict and she was not permitted to come.
 
@@ -421,7 +662,7 @@ Back at Princeton we were winding up our training and taking examinations. We we
 
 At the Pelham camp we were given time to obtain our uniforms. I went to a custom tailor (Haines Brothers) on Fulton Street near DeKalb Avenue in Brooklyn and ordered a uniform, overcoat, cap and believe it or not, a sword. Regulations at that time called for a sword as part of an officer's equipment. What we were to do with it was a big question. All of this equipment was at our own expense. 
 
-Ten days later, resplendent in my new Ensign uniform, I reported to the receiving ship in Brooklyn (barracks on the short of New York Harbor) to await orders for sea duty. These orders did not come until nearly three months had passed. As a staff officer, my duties were quite limited during this waiting period. Once or twice a week when officer of the day, I slept at the base. I was on a subsistence allowance which meant that when not on night duty, I was given an allowance for board and permitted to sleep at home. It may be of interest to note that this allowance plus my pay as an Ensign totaled more than my earnings at DeBevoise. Because of limited facilities at the base, the officer's mess was at the nearby \href{http://en.wikipedia.org/wiki/Crescent_Athletic_Club_House}{Crescent Club} which gave me an added thrill of lunching at one of Brooklyn's finest clubs. It was quite an experience for a poor buoy and I was quite proud I will admit. 
+Ten days later, resplendent in my new Ensign uniform, I reported to the receiving ship in Brooklyn (barracks on the shore of New York Harbor) to await orders for sea duty. These orders did not come until nearly three months had passed. As a staff officer, my duties were quite limited during this waiting period. Once or twice a week when officer of the day, I slept at the base. I was on a subsistence allowance which meant that when not on night duty, I was given an allowance for board and permitted to sleep at home. It may be of interest to note that this allowance plus my pay as an Ensign totaled more than my earnings at DeBevoise. Because of limited facilities at the base, the officer's mess was at the nearby \href{http://en.wikipedia.org/wiki/Crescent_Athletic_Club_House}{Crescent Club} which gave me an added thrill of lunching at one of Brooklyn's finest clubs. It was quite an experience for a poor boy and I was quite proud I will admit. 
 
 But my biggest break of luck in being stationed in Brooklyn was the opportunity to see Mabel frequently. We were ``keeping company.'' I rather think she took some pride in introducing her officer sweetheart to her friends. I met the members of her sorority and those of her boy friends not in service abroad. I seemed to be accepted as one of the crowd. I had little time for those of my old pals who were still at home. 
 
@@ -437,11 +678,11 @@ On February 27, I received orders to report to the \href{http://en.wikipedia.org
 Fuel was almost exhausted and the steering gear gone when an S.O.S.~was picked up by tugs that rescued her after a terrific battle with the waves.''
 \end{quote}
 
-I wasn't too pleased with this news and wondered what was ahead of me. I took off for my assignment the next day and as it was late in the evening when I arrived I checked in at a hotel. The next morning I decided to get my bearings on the hereabouts of the ship before reporting. I discovered that the Buford was an old merchant ship taken over by the Navy as an Army transport. Alongside the trim naval ships at dock, she ever did look shabby. With the takeover of the ship by the Navy, the civilian officers had been commissioned as Naval officers. 
+I wasn't too pleased with this news and wondered what was ahead of me. I took off for my assignment the next day and as it was late in the evening when I arrived I checked in at a hotel. The next morning I decided to get my bearings on the whereabouts of the ship before reporting. I discovered that the Buford was an old merchant ship taken over by the Navy as an Army transport. Alongside the trim naval ships at dock, she ever did look shabby. With the takeover of the ship by the Navy, the civilian officers had been commissioned as Naval officers. 
 
 It was fortunate that I obtained this information before reporting for duty because if I had reported as naval regulations required with that shiny new sword at my side I think I would have been tossed overboard. I went back to the hotel, packed my gear and walked to the ship with it under my arms. I simply introduced myself to the skipper, Commander Olsen, and told him I was reporting for duty. If I had reported to that old sea dog according to regulations, I hate to think of the consequences.
 
-Fortunately for me, a raw Naval Reserve Supply Officer, the Chief Yeoman assigned to me was a regular Navy man with many years of experience in supply practice and regulations. Like all seasoned chief petty officers he knew his job and was a fine chap. He did the work and I was more or less a figure head treading softly for fear of making myself a conspicuous neophyte. The first test of such fear came when I had to climb down a rope ladder over the side of the ship to a supply barge below. It was night and that swaying ladder seemed a mile long. With gobs watching, I managed to scramble down that later, check the supplies and climb up again without, I hoped, too much loss of dignity. 
+Fortunately for me, a raw Naval Reserve Supply Officer, the Chief Yeoman assigned to me was a regular Navy man with many years of experience in supply practice and regulations. Like all seasoned chief petty officers he knew his job and was a fine chap. He did the work and I was more or less a figure head treading softly for fear of making myself a conspicuous neophyte. The first test of such fear came when I had to climb down a rope ladder over the side of the ship to a supply barge below. It was night and that swaying ladder seemed a mile long. With gobs watching, I managed to scramble down that ladder, check the supplies and climb up again without, I hoped, too much loss of dignity. 
 
 The first night on the Buford I joined a group of officers and a civilian salesman for a game of poker at a hotel. One of them produced some liquid refreshment which resulted in more of a drinking bout then a card game. The civilian got a bit out of control and two of the officers were forcibly restrained by the others from throwing him out the window. So ended another episode in my efforts to be accepted as a regular guy by those ex-merchant sailors. 
 
@@ -452,7 +693,7 @@ A few days later the Buford took off for France but didn't get much beyond the h
 
 The transition to civilian life was a bit rough. For the past six months my commission had carried some prestige and now, so to speak, I was at the bottom of the heap again. As I needed new suits -- but more likely because I wanted to show-off -- I wore my uniform during my first week or so on the job. I must have looked silly calling on jobbers in the South Brooklyn territory wearing an ensign's uniform and lugging a big sample case or standing behind that big desk in the office posting the journals. But the uniform was soon discarded and I eased into the business grooves again.
 
-DeBevoise had been enjoying good business during the war despite material shortages and sales were running over a million dollars a year. He was now granting monthly bonuses to the foremen and key personnel and informed me that I would receive one also. Shortly after I was given additional sales opportunities along with a used \href{http://en.wikipedia.org/wiki/Ford_Model_T}{Ford Model T}. Although it was understood that the Ford would be garaged in DeBevois's new warehouse and garage across the street from the factory, I did drive it home on those Saturdays I worked the Long Island territory and would hold it over the weekend. It was on such a Saturday that I invited Mabel to join me and we had a very nice trip together, that is until the time I thought I could look into her eyes and at the same time weave through traffic. I found to my dismay that I did not have such dual vision when I drove the Ford into the rear of a parked car on a street in Freeport with a crash heard a block away. Fortunately the car I hit was a heavy one with a strong bumper and not damaged at all. The Ford, however, was damaged severely and had to be towed to a garage for repairs while we went home on a Long Island train. The owner of the parked car evidently sense the situation and did not make any trouble for us. We thought he was a great guy. 
+DeBevoise had been enjoying good business during the war despite material shortages and sales were running over a million dollars a year. He was now granting monthly bonuses to the foremen and key personnel and informed me that I would receive one also. Shortly after I was given additional sales opportunities along with a used \href{http://en.wikipedia.org/wiki/Ford_Model_T}{Ford Model T}. Although it was understood that the Ford would be garaged in DeBevois's new warehouse and garage across the street from the factory, I did drive it home on those Saturdays I worked the Long Island territory and would hold it over the weekend. It was on such a Saturday that I invited Mabel to join me and we had a very nice trip together, that is until the time I thought I could look into her eyes and at the same time weave through traffic. I found to my dismay that I did not have such dual vision when I drove the Ford into the rear of a parked car on a street in Freeport with a crash heard a block away. Fortunately the car I hit was a heavy one with a strong bumper and not damaged at all. The Ford, however, was damaged severely and had to be towed to a garage for repairs while we went home on a Long Island train. The owner of the parked car evidently sensed the situation and did not make any trouble for us. We thought he was a great guy. 
 
 % Timeline: 1919
 
@@ -466,7 +707,7 @@ On Christmas 1919, I had the pleasure of placing an engagement ring on Mabel's f
 
 Meanwhile, Wad Smith had returned from his military service in Paris as a Captain and with a French bride, Marthe. They had met in Paris and had been married after a brief courtship with Wad's good friend Merle Hale, also a Captain, as best man. Marthe, a widow with a baby boy, Jack, had some difficulty with English on her arrival. We had a lot of fun with her and Wad and saw them frequently. Marthe, like so many other French and Europeans had the idea that all Americans were wealthy. As she told us later after Wad was really ``in the money'' she had her eyes opened when Wad took her to his parents' little flat and the simple bungalow they owned in Staten Island. 
 
-Wad had accepted a job as a secretary with the General Motors Export Company and suggested that I too join up with that progressive little company. I felt, however, that the DeBevoise outfit offered better opportunities. Mr.~DeBevoise had promised that eventually he would turn the business over to his key people. I still do not know whether or not I made the right decision. Ten years later I did make a connection with General Motors but meanwhile Wad had made an outstanding success with GM. During 1920, for of reasons I do not now recall we lost frequent contact with Wad and Marthe. I think during that time he spent some time in Europe for GM.
+Wad had accepted a job as a secretary with the General Motors Export Company and suggested that I too join up with that progressive little company. I felt, however, that the DeBevoise outfit offered better opportunities. Mr.~DeBevoise had promised that eventually he would turn the business over to his key people. I still do not know whether or not I made the right decision. Ten years later I did make a connection with General Motors but meanwhile Wad had made an outstanding success with GM. During 1920, for reasons I do not now recall we lost frequent contact with Wad and Marthe. I think during that time he spent some time in Europe for GM.
 
 \custompagelabel{ioe:wedding} Mabel and I were tied up with our own problems as mentioned previously and with our plans for our wedding. The big event took place at her home on 10\textsuperscript{th} Street on October 20. It was a simple little affair with only the immediate family in present -- Mom and Pop Morris, Mother and Dad Norseen, Chester and Lizetta, Vada and Roy, and Aunt Carrie Mather. Jack Glander was my best man and Hylda Booth was Mabel's Bridesmaid. Dr.~Young, Pastor of Mabel's church officiated. Jack, who had been taking vocal lessons and had a very fine tenor voice, sang \href{http://en.wikipedia.org/wiki/Oh_Promise_Me}{``Oh Promise Me.''}\footnote{Music by Reginald De Koven and lyrics by Clement Scott.} Mother Norseen served the wedding supper. It was a quiet affair but exciting nevertheless. In order to escape the rice and kidding, Mabel rode the \href{http://en.wikipedia.org/wiki/Dumbwaiter_(elevator)}{little kitchen dumbwaiter} into the basement and ran out through the front basement door to the car where I was waiting, but did not succeed in evading our well-wishers. 
 
@@ -1150,6 +1391,12 @@ Ideas:
 Look out for this: 
 "On September 19, a notice of my retirement on October 1 and announcement of the appointment of Bill Trenn as my successor was released to the press along with photographs. It received good coverage in New York and Detroit papers."
 
+Also look for Percy Crosby's Skippy comic
+
+Put in link to Brooklyn Daily Eagle for Wad smith
+
+Link to Battery Park
+
 
 Resources: 
 
@@ -1199,6 +1446,9 @@ World Horizons exhibit at the 1939 World's Fair:
 http://www.1939nyworldsfair.com/worlds_fair/wf_tour/zone-6/world_horizons/world_horizons.aspx
 
 
+Images without copyrights: 
+  Flat iron building 1917 https://www.flickr.com/photos/internetarchivebookimages/14768515855
+  Morris Park in 1891 https://www.flickr.com/photos/internetarchivebookimages/14597827190
 
 Next things to search for: 
 Walter W.~DeBevoise and candy company
@@ -1216,3 +1466,10 @@ Loomis Sanatorium in Liberty, New York
 Export Division's first Transportation Conference (in Detroit newspapers?)
 
 Sayville High School (in 1920s)
+
+
+Family tree updates: 
+
+Aunt Addie was the sister of Isaac and had three children, Isaac, Carrie and Walter. Walter has a son Walter J.
+
+Birdella's brother: Alvie LaBonte
