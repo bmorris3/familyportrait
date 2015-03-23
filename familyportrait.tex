@@ -1,8 +1,8 @@
-\documentclass[12pt]{memoir}              % Book class in 11 points
+\documentclass[11pt,largecrownvopaper]{memoir}              % Book class in 11 points
 \usepackage{wasysym} % Needed for cents symbol
 \usepackage{float}
 \usepackage{graphicx}
-\usepackage[rightcaption]{sidecap}
+%\usepackage[rightcaption]{sidecap}
 \usepackage{tikz}
 %\usetikzlibrary{graphs}
 \usetikzlibrary{graphdrawing}
@@ -30,7 +30,7 @@
 
 % Use this word instead of "Figure" before a figure caption.
 \renewcommand{\figurename}{Clipping} 
-\sidecaptionvpos{figure}{c}
+%\sidecaptionvpos{figure}{c}
 %\usepackage{footnote}
 %\makesavenoteenv{tabular}
 %\makesavenoteenv{table}
@@ -48,16 +48,16 @@
 
 \usepackage{hyperref}
 \hypersetup{
-    colorlinks=true,       % false: boxed links; true: colored links
-    linkcolor=cyan,          % color of internal links (change box color with linkbordercolor)
-    citecolor=green,        % color of links to bibliography
-    filecolor=magenta,      % color of file links
-    urlcolor=blue           % color of external links
+    colorlinks=black,       % false: boxed links; true: colored links
+    linkcolor=black,          % color of internal links (change box color with linkbordercolor)
+    citecolor=black,        % color of links to bibliography
+    filecolor=black,      % color of file links
+    urlcolor=black           % color of external links
 }
 
-\title{\textsc{\Huge ``Family Portrait''}\\ The Autobiography of James Alfred Morris}    % Supply information
-\author{James Alfred Morris \andnext and Brett Michael Morris}              %   for the title page.
-\date{New York 1962-1967 \\and Seattle 2014}                           %   Use current date. 
+\title{\textsc{\Huge ``Family Portrait''}\\ The Autobiography of \\James Alfred Morris}    % Supply information
+\author{James Alfred Morris \andnext with Brett Michael Morris}              %   for the title page.
+\date{New York, 1962-1967 \\and Seattle, 2014}                           %   Use current date. 
 % Note that book class by default is formatted to be printed back-to-back.
 \begin{document}                        % End of preamble, start of text.
 \frontmatter
@@ -99,11 +99,6 @@ Move to 1627 East 23\textsuperscript{rd} Street, Brooklyn & \pageref{ioe:moveto2
 Al's first job at General Motors & \pageref{ioe:begingm} \\
 The Great Depression begins & \pageref{ioe:greatdepression}\\
 Birth of James A.~Morris Jr. & \pageref{ioe:jamjr} \\
-Al becomes Director of Public Relations of the Overseas Operations & \pageref{ioe:dirproo}\\
-1939 New York World's Fair & \pageref{ioe:worldsfair} \\
-Beginning of World War II & \pageref{ioe:wwii} \\
-Attack on Pearl Harbor & \pageref{ioe:pearlharbor}\\
-Passing of Birdella Morris & \pageref{ioe:deathmommorris} \\
 \end{tabular*}
 \end{table}
 
@@ -111,6 +106,11 @@ Passing of Birdella Morris & \pageref{ioe:deathmommorris} \\
 \begin{table}[H]
 \centering
 \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
+Al becomes Director of Public Relations & \pageref{ioe:dirproo}\\
+1939 New York World's Fair & \pageref{ioe:worldsfair} \\
+Beginning of World War II & \pageref{ioe:wwii} \\
+Attack on Pearl Harbor & \pageref{ioe:pearlharbor}\\
+Passing of Birdella Morris & \pageref{ioe:deathmommorris} \\
 Move to Rockville Centre & \pageref{ioe:movetorockvillecentre}\\
 James Jr.~contracts polio & \pageref{ioe:polio} \\
 Al appointed Director of Shareholder Relations & \pageref{ioe:dirsharereln} \\
@@ -127,224 +127,224 @@ Passing of Chester Morris & \pageref{ioe:chesterdies} \\
 \end{tabular*}
 \end{table}
 \endgroup
-
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\newgeometry{left=2cm,right=2cm}
-
-\tikzset{
-    every rectangle node/.style={
-        align=center,
-        text width=1.3cm,
-        font=\scriptsize%\footnotesize
-    }
-}
+%
+%\newgeometry{left=2cm,right=2cm}
+%
+%\tikzset{
+%    every rectangle node/.style={
+%        align=center,
+%        text width=1.3cm,
+%        font=\scriptsize%\footnotesize
+%    }
+%}
 %\cleartoleftpage
-\begingroup
-\renewcommand{\newpage}{}
-\chapter{Family Tree}
-\endgroup 
-\footnotetext{Only including persons mentioned in this autobiography and their spouses.}
-
-\begin{minipage}[H]{\textwidth}  
-\begin{tikzpicture}
-\node[rectangle,draw] (hannah) at (-1, 0) {Hannah Terry Morris};
-\node[rectangle,draw] (jacob) at (1, 0) {Jacob Morris};
-\node[coordinate] (centered-2) at (0, 0) {}
-child {
-    node[rectangle,draw] (charles) at (0, -1) {Charles S. Morris}
-    node[rectangle,draw] (ann) at (2, -1) {Ann Newman Morris}
-    node[coordinate] (centered-1) at (1, -1) {}
-    child {
-            node[rectangle,draw] (addie) at (-0.5, -1) {Addie Elizabeth Morris}
-          }
-    child {
-            node[rectangle,draw] (isaac) at (0.5, -1) {Isaac J. Morris}%; 
-            %node[rectangle,draw] (birdella) at (3, -1) {Birdella LaBonte Morris}%;
-            node[coordinate] (centered0a) at (2, -1) {}
-            child {
-                node[coordinate] (offset) at (0, -0.5) {}
-                child {
-                       node[rectangle,draw] (james) at (-10, -1) {James Alfred Morris}
-                       node[rectangle,draw] (mabel) at (-12, -1) {Mabel Norseen Morris}
-                       node[coordinate] (centered1) at (-11, -1) {}
-                       child { 
-                              node[rectangle,draw] (jimmie) at (0, -1) {James Alfred Morris, Jr.}
-                              node[rectangle,draw] (vandy) at (-2, -1) {Vandy Weldon Morris}
-                              node[coordinate] (centered2) at (-1, -1) {}
-                              child {
-                                     node[rectangle,draw] (karenv) at (-0.5, -1) {Karen Morris Von Braunsberg}
-                                     node[rectangle,draw] (sean) at (-2.5, -1) {Sean Von Braunsberg}
-                                    }
-                              child {
-                                     node[rectangle,draw] (scott) at (0.5, -1) {Scott Weldon Morris}
-                                     node[rectangle,draw] (shari) at (2.5, -1) {Shari Stark Morris}
-                                    }
-                             }
-                       }
-                child {
-                      node[rectangle,draw] (chester) at (-3.5, -1) {Chester DeVere Morris}
-                      node[rectangle,draw] (lizetta) at (-5.5, -1) {Lizetta Letts Morris}
-                      node[coordinate] (centered3) at (-4.5, -1) {}
-                      child {
-                             node[rectangle,draw] (roger) at (-1, -1) {Roger Morris}
-                             node[rectangle,draw] (ceil) at (-3, -1) {Ceil Weisse Morris}
-                             node[coordinate] (centered4) at (-2, -1) {}
-                             child {
-                                    node[rectangle,draw] (karenm) at (-0.5, -1) {Karen Morris}
-                                   }
-                             child {
-                                    node[rectangle,draw] (susan) at (0.5, -1) {Susan Morris}
-                                   }
-                            }
-                      child {
-                             node[rectangle,draw] (evelyn) at (1, -1) {Evelyn Morris Veritzan}
-                             node[rectangle,draw] (robert) at (3, -1) {Robert Veritzan}
-                             node[coordinate] (centered5) at (2, -1) {}
-                             child {
-                                    node[rectangle,draw] (donaldv) at (0, -1) {Donald Veritzan}
-                                    node[rectangle,draw] (mary) at (-2, -1) {Mary Mollini Veritzan}
-                                   }
-                            }
-                      }
-                 }
-            }
-    }
-;
+%\begingroup
+%\renewcommand{\newpage}{}
+%\chapter{Family Tree}
+%\endgroup 
+%\footnotetext{Only including persons mentioned in this autobiography and their spouses.}
+%
+%\begin{minipage}[H]{\textwidth}  
+%\begin{tikzpicture}
+%\node[rectangle,draw] (hannah) at (-1, 0) {Hannah Terry Morris};
+%\node[rectangle,draw] (jacob) at (1, 0) {Jacob Morris};
+%\node[coordinate] (centered-2) at (0, 0) {}
+%child {
+%    node[rectangle,draw] (charles) at (0, -1) {Charles S. Morris}
+%    node[rectangle,draw] (ann) at (2, -1) {Ann Newman Morris}
+%    node[coordinate] (centered-1) at (1, -1) {}
+%    child {
+%            node[rectangle,draw] (addie) at (-0.5, -1) {Addie Elizabeth Morris}
+%          }
+%    child {
+%            node[rectangle,draw] (isaac) at (0.5, -1) {Isaac J. Morris}%; 
+%            %node[rectangle,draw] (birdella) at (3, -1) {Birdella LaBonte Morris}%;
+%            node[coordinate] (centered0a) at (2, -1) {}
+%            child {
+%                node[coordinate] (offset) at (0, -0.5) {}
+%                child {
+%                       node[rectangle,draw] (james) at (-10, -1) {James Alfred Morris}
+%                       node[rectangle,draw] (mabel) at (-12, -1) {Mabel Norseen Morris}
+%                       node[coordinate] (centered1) at (-11, -1) {}
+%                       child { 
+%                              node[rectangle,draw] (jimmie) at (0, -1) {James Alfred Morris, Jr.}
+%                              node[rectangle,draw] (vandy) at (-2, -1) {Vandy Weldon Morris}
+%                              node[coordinate] (centered2) at (-1, -1) {}
+%                              child {
+%                                     node[rectangle,draw] (karenv) at (-0.5, -1) {Karen Morris Von Braunsberg}
+%                                     node[rectangle,draw] (sean) at (-2.5, -1) {Sean Von Braunsberg}
+%                                    }
+%                              child {
+%                                     node[rectangle,draw] (scott) at (0.5, -1) {Scott Weldon Morris}
+%                                     node[rectangle,draw] (shari) at (2.5, -1) {Shari Stark Morris}
+%                                    }
+%                             }
+%                       }
+%                child {
+%                      node[rectangle,draw] (chester) at (-3.5, -1) {Chester DeVere Morris}
+%                      node[rectangle,draw] (lizetta) at (-5.5, -1) {Lizetta Letts Morris}
+%                      node[coordinate] (centered3) at (-4.5, -1) {}
+%                      child {
+%                             node[rectangle,draw] (roger) at (-1, -1) {Roger Morris}
+%                             node[rectangle,draw] (ceil) at (-3, -1) {Ceil Weisse Morris}
+%                             node[coordinate] (centered4) at (-2, -1) {}
+%                             child {
+%                                    node[rectangle,draw] (karenm) at (-0.5, -1) {Karen Morris}
+%                                   }
+%                             child {
+%                                    node[rectangle,draw] (susan) at (0.5, -1) {Susan Morris}
+%                                   }
+%                            }
+%                      child {
+%                             node[rectangle,draw] (evelyn) at (1, -1) {Evelyn Morris Veritzan}
+%                             node[rectangle,draw] (robert) at (3, -1) {Robert Veritzan}
+%                             node[coordinate] (centered5) at (2, -1) {}
+%                             child {
+%                                    node[rectangle,draw] (donaldv) at (0, -1) {Donald Veritzan}
+%                                    node[rectangle,draw] (mary) at (-2, -1) {Mary Mollini Veritzan}
+%                                   }
+%                            }
+%                      }
+%                 }
+%            }
+%    }
+%;
 % Mabel's parents
-\node[rectangle,draw] (charlesn) at (-12, -3) {Charles A. Norseen};
-\node[rectangle,draw] (sophie) at (-10, -3) {Sophie Frid Norseen};
-\node[coordinate] (charlessophiemabel) at (-11, -3) {}
-child {
-	node[rectangle,draw] (florence) at (-1, -1) {Florence Norseen}
-};
-\draw (charlessophiemabel) -- (mabel);
-
+%\node[rectangle,draw] (charlesn) at (-12, -3) {Charles A. Norseen};
+%\node[rectangle,draw] (sophie) at (-10, -3) {Sophie Frid Norseen};
+%\node[coordinate] (charlessophiemabel) at (-11, -3) {}
+%child {
+%	node[rectangle,draw] (florence) at (-1, -1) {Florence Norseen}
+%};
+%\draw (charlessophiemabel) -- (mabel);
+%
 % Vandy's
-\node[rectangle,draw] (herman) at (-13, -7) {Herman Rolf Wucherp-finnig};
-\node[rectangle,draw] (christine) at (-11, -7) {Christine Elisabeth Lassen Weldon};
-\node[coordinate] (christineherman) at (-12, -7) {};
-\node[coordinate] (christineherman-1) at (-12, -8) {};
-
-\node[coordinate] (tobirdella) at (4.5, -4) {};
-\draw (isaac) -- (tobirdella);
-
-
-
-\draw (christineherman) -- (christineherman-1);
-\draw (christineherman-1) -- (vandy);
-\draw (charles) -- (ann);
-\draw (herman) -- (christine);
-\draw (hannah) -- (jacob);
-\draw (mabel) -- (james);
-\draw (vandy) -- (jimmie);
-\draw (chester) -- (lizetta);
-\draw (scott) -- (shari);
-\draw (roger) -- (ceil);
-\draw (evelyn) -- (robert);
-\draw (karenv) -- (sean);
-\draw (donaldv) -- (mary);
-\draw (charlesn) -- (sophie);
-\end{tikzpicture}
-\end{minipage}
-
+%\node[rectangle,draw] (herman) at (-13, -7) {Herman Rolf Wucherp-finnig};
+%\node[rectangle,draw] (christine) at (-11, -7) {Christine Elisabeth Lassen Weldon};
+%\node[coordinate] (christineherman) at (-12, -7) {};
+%\node[coordinate] (christineherman-1) at (-12, -8) {};
+%
+%\node[coordinate] (tobirdella) at (4.5, -4) {};
+%\draw (isaac) -- (tobirdella);
+%
+%
+%
+%\draw (christineherman) -- (christineherman-1);
+%\draw (christineherman-1) -- (vandy);
+%\draw (charles) -- (ann);
+%\draw (herman) -- (christine);
+%\draw (hannah) -- (jacob);
+%\draw (mabel) -- (james);
+%\draw (vandy) -- (jimmie);
+%\draw (chester) -- (lizetta);
+%\draw (scott) -- (shari);
+%\draw (roger) -- (ceil);
+%\draw (evelyn) -- (robert);
+%\draw (karenv) -- (sean);
+%\draw (donaldv) -- (mary);
+%\draw (charlesn) -- (sophie);
+%\end{tikzpicture}
+%\end{minipage}
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\pagebreak
-
+%\pagebreak
+%
 %\vspace*{2.85cm}
-\vspace*{8cm}
-
-\begin{minipage}[H]{\textwidth}  
-\begin{tikzpicture}
-\node[rectangle,draw] (birdella) at (3, -4) {Birdella LaBonte Morris};
-\node[coordinate] (centered0a) at (2, -4) {}
-child {
-node[coordinate] (offset) at (0, -0.5) {}
-child {
-      node[rectangle,draw] (vada) at (5, -1) {Vada Morris Rubb}
-      node[rectangle,draw] (roy) at (7, -1) {Roy Rubb}
-      node[coordinate] (centered3) at (6, -1) {}
-      child {
-             node[rectangle,draw] (donaldr) at (-1.5, -1) {Donald Rubb}
-             node[rectangle,draw] (sally) at (-3.5, -1) {Sally Reynolds Rubb}
-             node[coordinate] (centered6) at (-2.5, -1) {}
-             child {
-                 node[coordinate] (centered6b) at (0, 0) {}
-             child {
-                    node[rectangle,draw] (alan) at (-1.5, -0.25) {Alan Leroy Rubb}
-                   }
-             child {
-                    node[rectangle,draw] (mark) at (-0.5, -0.25) {Mark Patrick Rubb}
-                   }
-             child {
-                    node[rectangle,draw] (lisa) at (0.5, -0.25) {Lisa Ann Rubb}
-                   }
-             child {
-                    node[rectangle,draw] (kelly) at (1.5, -0.25) {Kelly Ann Rubb}
-                   }
-               }
-            }
-      child {
-             node[rectangle,draw] (miriam) at (1.5, -1) {Miriam Rubb Rothhaupt}
-             node[rectangle,draw] (andrew) at (3.5, -1) {Andrew Rothhaupt}
-             node[coordinate] (centered7) at (2.5, -1) {}
-             child {
-                    node[rectangle,draw] (terry) at (-0.5, -1) {Terry Rothhaupt}
-                   }
-             child {
-                    node[rectangle,draw] (alice-lynne) at (0.5, -1) {Alice-Lynne Rothhaupt}
-                   }
-            }
-      }
-child {
-      node[rectangle,draw] (kenneth) at (11, -1) {Kenneth Morris}
-      node[rectangle,draw] (alice) at (13, -1) {Alice Sisson Morris}
-      node[coordinate] (centered8) at (12, -1) {}
-      child {
-             node[rectangle,draw] (petersr) at (1.5, -1) {Peter Morris}
-             node[rectangle,draw] (drue) at (3.5, -1) {Drue Doll Morris}
-             node[coordinate] (centered9) at (2.5, -1) {}
-             child {
-                    node[rectangle,draw] (peterjr) at (0, -1) {Peter Morris}
-                   }
-            }
-      child {
-             node[rectangle,draw] (Jeffrey) at (-1.5, -1) {Jeffrey Morris}
-            }
-      }
- }
-;
-
+%\vspace*{8cm}
+%
+%\begin{minipage}[H]{\textwidth}  
+%\begin{tikzpicture}
+%\node[rectangle,draw] (birdella) at (3, -4) {Birdella LaBonte Morris};
+%\node[coordinate] (centered0a) at (2, -4) {}
+%child {
+%node[coordinate] (offset) at (0, -0.5) {}
+%child {
+%      node[rectangle,draw] (vada) at (5, -1) {Vada Morris Rubb}
+%      node[rectangle,draw] (roy) at (7, -1) {Roy Rubb}
+%      node[coordinate] (centered3) at (6, -1) {}
+%      child {
+%             node[rectangle,draw] (donaldr) at (-1.5, -1) {Donald Rubb}
+%             node[rectangle,draw] (sally) at (-3.5, -1) {Sally Reynolds Rubb}
+%             node[coordinate] (centered6) at (-2.5, -1) {}
+%             child {
+%                 node[coordinate] (centered6b) at (0, 0) {}
+%             child {
+%                    node[rectangle,draw] (alan) at (-1.5, -0.25) {Alan Leroy Rubb}
+%                   }
+%             child {
+%                    node[rectangle,draw] (mark) at (-0.5, -0.25) {Mark Patrick Rubb}
+%                   }
+%             child {
+%                    node[rectangle,draw] (lisa) at (0.5, -0.25) {Lisa Ann Rubb}
+%                   }
+%             child {
+%                    node[rectangle,draw] (kelly) at (1.5, -0.25) {Kelly Ann Rubb}
+%                   }
+%               }
+%            }
+%      child {
+%             node[rectangle,draw] (miriam) at (1.5, -1) {Miriam Rubb Rothhaupt}
+%             node[rectangle,draw] (andrew) at (3.5, -1) {Andrew Rothhaupt}
+%             node[coordinate] (centered7) at (2.5, -1) {}
+%             child {
+%                    node[rectangle,draw] (terry) at (-0.5, -1) {Terry Rothhaupt}
+%                   }
+%             child {
+%                    node[rectangle,draw] (alice-lynne) at (0.5, -1) {Alice-Lynne Rothhaupt}
+%                   }
+%            }
+%      }
+%child {
+%      node[rectangle,draw] (kenneth) at (11, -1) {Kenneth Morris}
+%      node[rectangle,draw] (alice) at (13, -1) {Alice Sisson Morris}
+%      node[coordinate] (centered8) at (12, -1) {}
+%      child {
+%             node[rectangle,draw] (petersr) at (1.5, -1) {Peter Morris}
+%             node[rectangle,draw] (drue) at (3.5, -1) {Drue Doll Morris}
+%             node[coordinate] (centered9) at (2.5, -1) {}
+%             child {
+%                    node[rectangle,draw] (peterjr) at (0, -1) {Peter Morris}
+%                   }
+%            }
+%      child {
+%             node[rectangle,draw] (Jeffrey) at (-1.5, -1) {Jeffrey Morris}
+%            }
+%      }
+% }
+%;
+%
 % Birdella's sister's branch
-\node[rectangle,draw] (carrie) at (7, -4) {Carrie LaBonte Mather};
-\node[rectangle,draw] (raymond) at (9, -4) {Raymond Mather};
-\node[coordinate] (carrieraymond) at (8, -4) {}
-child {
-       node[rectangle,draw] (fred) at (-0.5, -0.75) {Fred Mather}
-      }
-child {
-       node[rectangle,draw] (effie) at (0.5, -0.75) {Effie Mather}
-      };
-\node[coordinate] (carriebirdella) at (5, -3) {};
-\draw (carriebirdella) -- (birdella);
-\draw (carriebirdella) -- (carrie);
-
-\node[coordinate] (toisaac) at (1, -4) {};
-\draw (toisaac) -- (birdella);
-
-
-\draw (raymond) -- (carrie);
-\draw (vada) -- (roy);
-\draw (donaldr) -- (sally);
-\draw (andrew) -- (miriam);
-\draw (kenneth) -- (alice);
-\draw (petersr) -- (drue);
-\end{tikzpicture}
-\end{minipage}
-\restoregeometry
-
+%\node[rectangle,draw] (carrie) at (7, -4) {Carrie LaBonte Mather};
+%\node[rectangle,draw] (raymond) at (9, -4) {Raymond Mather};
+%\node[coordinate] (carrieraymond) at (8, -4) {}
+%child {
+%       node[rectangle,draw] (fred) at (-0.5, -0.75) {Fred Mather}
+%      }
+%child {
+%       node[rectangle,draw] (effie) at (0.5, -0.75) {Effie Mather}
+%      };
+%\node[coordinate] (carriebirdella) at (5, -3) {};
+%\draw (carriebirdella) -- (birdella);
+%\draw (carriebirdella) -- (carrie);
+%
+%\node[coordinate] (toisaac) at (1, -4) {};
+%\draw (toisaac) -- (birdella);
+%
+%
+%\draw (raymond) -- (carrie);
+%\draw (vada) -- (roy);
+%\draw (donaldr) -- (sally);
+%\draw (andrew) -- (miriam);
+%\draw (kenneth) -- (alice);
+%\draw (petersr) -- (drue);
+%\end{tikzpicture}
+%\end{minipage}
+%\restoregeometry
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -611,11 +611,11 @@ After three or four years, I began assisting in sales. I was given the South Bro
 
 \custompagelabel{ioe:passingofgrandmas} Meanwhile, home in Richmond Hill our social activities were humming along as outlined in a previous part of this story. Wad Smith had taken a job with the Brooklyn Daily Eagle and we were together quite a little in Brooklyn and in Richmond Hill. I was as much at home with his friends as he was with mine. So between the two groups I was kept busy -- socially at least. As our apartment on Briggs Avenue was a bit crowded, Pop and I partitioned off two rooms in the attic with plaster board. They were fairly large rooms but bitter cold in the winter as it was not piped for heat. I would have to undress in the kitchen on these cold nights and hustle into bed under a half-ton of blankets. Later, when Grandma LaBonte came to live with us, she had the other room. She was ill and senile at times. On several occasions during the night she would fall out of bed and I would grope through to her room and lift her back into bed. Mother had a difficult time as Grandma Morris, also ill, lived with us before Grandma LaBonte came. Grandma Morris died in 1917 two days before her brother, David Swayze. Grandma LaBonte died in 1919. 
 
-\begin{SCfigure}
+\begin{figure}
 \centering
 \caption{The obituary of ``Grandma'' Ann Morris and David Swayze in the Brooklyn Daily Eagle, printed March 16, 1917, page 8. [Source: \url{http://bklyn.newspapers.com/image/53892463/}, accessed August, 2014]}
-\includegraphics[scale=0.04]{images/The_Brooklyn_Daily_Eagle_Fri__Mar_16__1917_.jpg}
-\end{SCfigure}
+\includegraphics[scale=0.04]{images/The_Brooklyn_Daily_Eagle_Fri__Mar_16__1917_curves.jpg}
+\end{figure}
 
 
 Chester had been keeping company with a little auburn haired girl Lizetta Letts for two or three years. Lizetta lived down the avenue diagonally across from our first home in Morris Park. After Chester met Lizetta, no other girl meant anything to him. They were married in 1915 in her home. It was quite a wedding. Most of our and their relatives were there. I am thinking particularly of Carrie Mather, mother's sister, her husband Raymond and their two children, Fred who was a little older than Chester and Effie, a beautiful young woman, who was about Chester's age. Fred would visit us occasionally but Effie and her father we lost track of. Uncle Raymond was a heavy drinker and years later Aunt Carrie left him and lived with the folks in Ronkonkoma as a result of that broken home. 
@@ -825,19 +825,19 @@ My I say here that few children realize the debt they owe their parents until th
 
 At our ages, it was this realization that drew us to Ronkonkoma and to enjoy getting together with the family on anniversaries or whenever we wanted to. The 40\textsuperscript{th} anniversary of the marriage of Mom and Pop on June 16, 1930 was such an occasion. It was a delightful affair and one long to be remembered. And there were to follow eleven more such anniversaries with Mom and Pop being honored. After Mabel and I had moved to our new home on East 23\textsuperscript{rd} Street in Brooklyn, Mom and Pop were with us on Christmas days. We were hosts to Mother and Dad Norseen also on those days. 
 
-\begin{SCfigure}
+\begin{figure}
 \centering
-\includegraphics[scale=0.04]{images/The_Brooklyn_Daily_Eagle_Wed__Jun_17__1931_.jpg}
+\includegraphics[scale=0.04]{images/The_Brooklyn_Daily_Eagle_Wed__Jun_17__1931_curves.jpg}
 \caption{A classified advertisement for Isaac Morris' ``Morris Oak Grove Camp'' from the Brooklyn Daily Eagle, printed June 17, 1931, page 26. [Source: \url{http://bklyn.newspapers.com/image/58263154/}, accessed August 3, 2014]}
-\end{SCfigure}
+\end{figure}
 In 1930, or perhaps a year or so earlier, Pop put up a sign in the grove ``Morris Oak Grove Camp -- Comfortable Camping.'' The camp was built around the little shack he had built on his property across the tracks and moved to the grove. Another little smaller place was built together with two wooden platforms on which he erected tents. This was the camp. I still have a letter head I designed showing the same wording and including a partial picture of the camp in which were two little boys -- Roger and Donald -- in the foreground. There was a lot of extra work involved in maintaining the camp and with only meager earnings for Pop and Mom. Some of the campers became close friends of the folks and returned year after year. 
 
 Kenneth, meanwhile, had fallen in love with a young Sayville School teacher -- Alice Sisson -- and decided to build a house in the grove alongside of the folk's house for their first home after marriage. He and a young architect friend planned and built the house themselves. They were both out of jobs. Kenneth had felt the full impact of the depression at General Motors and like many other young men without experience found it difficult to land another. The house they built was very comfortable and good looking. It had four rooms and bath. The outside was made of California redwood logs. On July 1, 1933, Kenneth and Alice ``eloped'' and were married in Harrison, New York. Meanwhile, Kenneth had secured a job with the South Bay Water Company in \href{http://en.wikipedia.org/wiki/Patchogue,_New_York}{Patchogue} as a helper. A job which often times required him to dig ditches for the laying of pipes. Roy, who had been with the water company for a couple of years, was his first boss. As will be related later, Kenneth moved up rapidly and at this writing holds an important executive post with a successor of that company. 
-\begin{SCfigure}
+\begin{figure}
 \centering
-\includegraphics[scale=0.03]{images/The_Brooklyn_Daily_Eagle_Mon__Jul_3__1933_.jpg}
+\includegraphics[scale=0.03]{images/The_Brooklyn_Daily_Eagle_Mon__Jul_3__1933_curves.jpg}
 \caption{The marriage announcement of Kenneth Morris and Alice Sisson from the Brooklyn Daily Eagle, printed July 3, 1933, page 15. [Source: \url{http://bklyn.newspapers.com/image/59844125/}, accessed August 3, 2014]}
-\end{SCfigure}
+\end{figure}
 
 All of the family were elated about the marriage and the fact that Kenneth and Alice were living next door to the folks. Mom had been lonesome in Ronkonkoma. She had left her church and friends in Richmond Hill. While she had made new friendships, new friendships formed in later life are seldom as close as the old ones. Now, with her youngest son and Alice, whom she liked very much, living alongside of her she was much happier. 
 
@@ -1022,11 +1022,11 @@ Meanwhile, at home in that Spring of 1942, we were enjoying a happy family and s
 
 \custompagelabel{ioe:deathmommorris} So with the exception of Mother Norseen, our circle of family and close friends was intact. But only for a short time. On the early morning of June 2, we received a telephone call telling us that Mom Morris was very ill and we should come home immediately. Mabel and I dressed hurriedly and drove to Ronkonkoma, picking up Chester, Lizetta and Evelyn on the way. We drove quickly and soberly, not knowing what to expect when we arrived. When we turned into the little private road through the Oak grove, we knew. The undertakers car with the body of Mom was driving away from the front porch. I braked my car and slumped over the wheel. It was the greatest shock of my life. Our dear Mom was gone. The family circle was broken. Somehow we managed to stumble into the house where the family was gathered with Pop. He was stunned and did not yet comprehend what had happened. I can recall asking him a little later where something could be found. He answered, ``ask Bird'' and then broke down. 
 
-\begin{SCfigure}
+\begin{figure}
 \centering
-\includegraphics[scale=0.04]{images/The_Brooklyn_Daily_Eagle_Wed__Jun_3__1942_.jpg}
+\includegraphics[scale=0.04]{images/The_Brooklyn_Daily_Eagle_Wed__Jun_3__1942_curves.jpg}
 \caption{The obituary of Birdella L. Morris from the Brooklyn Daily Eagle, printed June 3, 1942, page 15. [Source: \url{http://bklyn.newspapers.com/image/52654292/}, accessed August 16, 2014]}
-\end{SCfigure}
+\end{figure}
 
 When Pop had recovered, he told us what had happened. The previous night Pop, who was treasurer of the school about a hundred yards from his house, had been attended a meeting of the Board. While there, he received an incoherent phone call from Mom asking him to come home quickly. He ran home and found her on the floor in critical condition. She had suffered a heart attack but had managed to crawl to the phone to call Pop. It was the beginning of the end, for she survived for only a few hours. 
 
@@ -1038,7 +1038,7 @@ Back in Brooklyn, Mabel and I had long thought of moving to the suburbs where Ji
 
 \custompagelabel{ioe:movetorockvillecentre} During 1942 or 1943 our search for the type of home we wanted took us to Jersey, Westchester and Long Island. Finally in December 1943, we noted an advertisement of a six year old house in \href{http://en.wikipedia.org/wiki/Rockville_Centre,_New_York}{Rockville Centre}. It was a cold Sunday with snow on the ground but the wording of the ad was appealing and we decided to drive out and look the house over. And we were happy we did, for it was the type of home we had been seeking for a long time. After the usual dickering on price, we signed a contract and, after a complete redecorating job, moved in the following March. 
 
-Twenty years later, here at 60 Roxen Road on a hot August afternoon I am sitting on the back porch of that house writing these words and enjoying the tree shaded lawn and garden. In the interval since purchasing the home, as my income increased I have resisted the suggestions of friends to sell out and move to a more pretentious place> But Mabel and I liked it and it is very possible that it will remain our permanent home. 
+Twenty years later, here at 60 Roxen Road on a hot August afternoon I am sitting on the back porch of that house writing these words and enjoying the tree shaded lawn and garden. In the interval since purchasing the home, as my income increased I have resisted the suggestions of friends to sell out and move to a more pretentious place. But Mabel and I liked it and it is very possible that it will remain our permanent home. 
 
 At the time we moved, Rockville Centre was not as built up as it is now. Immediately behind our home was a large grove of trees and just to the east starting at a rear gate in our fence were several acres of cleared land that had once been a DeMott farm. Here we planted a victory garden adjoining similar vegetable gardens of our neighbors. And here too we became acquainted with our neighbors, who, like us, were helping the war effort by raising what we could of our own produce. Jimmie went to Hewlett School\footnote{The author is referring to Jennie E.~Hewitt Elementary School at 446 Hempstead Avenue, Rockville Centre, NY 11570} which was only four blocks away and later to South Side High School. We joined St.~Mark's Methodist Church and before long were well established in our new environment. 
 
@@ -1126,11 +1126,11 @@ The pace of the job was fast and little time was left for the family during the 
 
 \custompagelabel{ioe:fatherspass} During this period Mabel and I both lost our fathers. My father died on October 30, 1947 at the age of 79 years and 8 months. He had been ailing for some time and had become quite senile. He was laid to rest alongside Mom in Union Cemetery. Mabel's father passed away on April 1, 1951 at the age of 84 and nine months. He was hale and hearty until a month before when he had fallen down our front stairway on Roxen Road. He did not recover from the shock. He was buried with Mother Norseen in \href{http://en.wikipedia.org/wiki/Cemetery_of_the_Evergreens}{Evergreen Cemetery} in Brooklyn. Dad was survived by the youngest of his brothers, the Reverend Oscar Norseen, who, at this writing, is nearing 90 years of age and living at Covenant Palms, a retirement home for Swedish church members in Miami, Florida. Two other brothers, Henry and David, a sister, Emma Johnson, had died some years ago. At Pop's funeral, I saw Aunt Carrie (Mom's sister) for the last time. Since leaving Ronkonkoma, she had been living with her son (Fred Mather) in New Brunswick, New Jersey. We do not know what happened after that.
 
-\begin{SCfigure}[1.7]
+\begin{figure}[1.7]
 \centering
-\includegraphics[scale=0.04]{images/The_Brooklyn_Daily_Eagle_Wed__Apr_4__1951_.jpg}
+\includegraphics[scale=0.04]{images/The_Brooklyn_Daily_Eagle_Wed__Apr_4__1951_curves.jpg}
 \caption{The obituary of Charles Norseen in the Brooklyn Daily Eagle, printed April 4, 1951, page 15. [Source: \url{http://bklyn.newspapers.com/image/52644213/}, accessed August, 2014]}
-\end{SCfigure}
+\end{figure}
 
 The passing of our fathers marked the end of the old order. We were now the ``elders''. Marriages and births were expanding the ``juniors''. As mentioned previously, my niece Evelyn had married Robert Veritzen in 1938 and now had a son, Donald, born in 1946. After returning from the war, my nephew Roger had married Ceil Weisse in 1944 and in 1946 were blessed with a daughter, Susan, and in 1949 with a second daughter, Karen. My niece, Miriam, had married Andrew Rothhaupt, also a war veteran, in 1944. In 1946 their son Terry was born followed in 1950 by a daughter, Alice-Lynne. My nephew, Donald Rubb, married Sally Reynolds in 1952 and their first son Alan was born the same year. 
 
@@ -1438,7 +1438,7 @@ Resources:
  Passing of Aunt addie: 
 \begin{figure}
 \centering
-\includegraphics[scale=0.03]{images/The_Brooklyn_Daily_Eagle_Mon__Jan_7__1946_.jpg}
+\includegraphics[scale=0.03]{images/The_Brooklyn_Daily_Eagle_Mon__Jan_7__1946_curves.jpg}
 \caption{The death announcement of (Aunt) Addie Morris in the Brooklyn Daily Eagle, printed January 7, 1946, page 7. [Source: \url{http://bklyn.newspapers.com/image/52883100/}, accessed August, 2014]}
 \end{figure}
 
